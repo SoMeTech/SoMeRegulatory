@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/Report/zbxxJSHZ.aspx" hash="52e4a8c81" filehash="540b4d6495f8fb6c" flags="110000" assembly="SoMe" type="ASP.report_zbxxjshz_aspx">
+  <filedeps>
+    <filedep name="/Master/Report.master" />
+    <filedep name="/Report/zbxxJSHZ.aspx" />
+    <filedep name="/WebControls/ReportOrderControl.ascx" />
+    <filedep name="/WebControls/reprotButtonl.ascx" />
+  </filedeps>
+</preserve>

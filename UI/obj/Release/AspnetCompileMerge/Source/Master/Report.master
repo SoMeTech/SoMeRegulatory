@@ -1,0 +1,168 @@
+﻿<%@ master language="C#" autoeventwireup="true" CodeBehind="Report.master.cs" inherits="MainReport" %>
+
+<%@ Register Src="~/WebControls/ReportOrderControl.ascx" TagName="ReportOrderControl" TagPrefix="uc2" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title id="lbtitle" runat="server">无标题页</title>
+    
+    <script src="../jss/Main.js" type="text/javascript"></script>
+    <style type="text/css">
+        .Freezing
+        {
+            position: relative;
+            table-layout: fixed;
+            top: expression(this.offsetParent.scrollTop);
+            z-index: 10;
+        }
+        .Freezing th
+        {
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
+            padding: 2px;
+        }
+        .headerStyle
+        {
+            font-size: 14;
+            font-weight: normal;
+            text-align: center;
+            vertical-align: middle;
+            height: 26px;
+            background-color:#dedede;
+        }
+        .BackBar
+        {
+        	background-image:url(/images/new/backBar.png);
+        }
+        .mouthType
+        {
+        	cursor:hand; padding:3px 5px 0px 5px; background-color:#0F7CBF; color:#FFF; line-height:normal;
+        }
+		
+		.page_input {border:1px solid #CCCCCC; padding:0 2px; background-color:#FFFFFF; }
+		.page_img { margin-bottom:-4px;}
+        .ReportName
+        {
+            font-size:24px;
+            text-align:center;
+        }
+        </style> 
+</head>
+<body style="background-color: #FFFFFF;">
+    
+    <script src="<%=QxRoom.Common.Public.RelativelyPath("jss/PageMethods.js") %>"type="text/javascript"></script>
+    
+    <script type="text/javascript">
+
+        //屏蔽右键
+        //        function document.oncontextmenu() {
+        //            return false;
+        //        }
+
+        function getServerMess_callback(res) {
+            alert(res.value);
+        }
+
+        function PageSubmit(val) {
+
+            //windowFull();
+
+            if (val == "ibtcontrol_ibtrefresh") {
+                //window.location.reload();
+            }
+
+            if (val == "ibtcontrol_ibtimpower") {
+                //window.parent.IsDo("授权");
+                if (!confirm("您确定要给该职员授权吗？"))
+                    return false;
+            }
+
+            if (val == "ibtcontrol_ibtsetback") {
+                //window.parent.IsDo("弃审");
+                if (!confirm("您确定要将该笔数据弃审吗？"))
+                    return false;
+            }
+
+            if (val == "ibtcontrol_ibtrollback") {
+                //window.parent.IsDo("退回");
+                if (!confirm("您确定要将该笔数据退回吗？"))
+                    return false;
+            }
+
+            if (val == "ibtcontrol_ibtdelete") {
+                //window.parent.IsDo("删除");
+                if (!confirm("您确定要该笔数据删除吗？"))
+                    return false;
+            }
+
+            if (val == "ibtcontrol_ibtaudit") {
+                //IsDo("审核");
+                if (!confirm("您确定要执行该项操作吗？"))
+                    return false;
+            }
+
+            if (val == "ibtcontrol_ibtapply") {
+                //IsDo("审批");
+                if (!confirm("您确定要执行该项操作吗？"))
+                    return false;
+            }
+
+            if (val == "ibtcontrol_ibtexit") {
+                window.parent.IsCloseTab();
+            }
+        }
+
+
+        function Cleanup() {
+            window.clearInterval(idTmr);
+
+            CollectGarbage();
+        }
+        function IsSubmit() {
+            //内容页如需提交时验证，需实现IsOnSubmit()方法。
+            try { return IsOnSubmit(); } catch (e) { return true; }
+        }
+    </script>
+
+    <form id="form1" runat="server" onsubmit="return IsSubmit();">
+    <asp:Button ID="Button1" runat="server" Text="Button"  Visible="false"/>
+    <asp:ScriptManager ID="ScriptManager1" runat="server">
+        <Scripts>
+            <asp:ScriptReference ScriptMode="Auto" Path="~/jss/GridViewChangeColor.js" />
+            <asp:ScriptReference ScriptMode="Auto" Path="~/jss/Qx_nz.js" />
+        </Scripts>
+    </asp:ScriptManager>
+    <div align="left">
+        <asp:UpdatePanel ID="UpdatePanel1" runat="server">
+            <ContentTemplate>
+                <table cellspacing="0" cellpadding="0" border="0" width="100%">
+                    <tr>
+                        <td colspan="2" class="border" style="width: 100%;">
+                            <table cellspacing="0" cellpadding="0" border="0" width="100%">
+                                <tr bgcolor="#FFFFFF">
+                                    <td valign="middle" align="left" height="25" class="BackBar">
+                                    
+                                        <uc2:ReportOrderControl ID="WebOrderControl1" runat="server" /><!--过滤选项-->
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">
+                                        <asp:Panel ID="Panel1" runat="server" ScrollBars="Auto">
+                                            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                                            </asp:ContentPlaceHolder>
+                                        </asp:Panel>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </ContentTemplate>
+            <Triggers><asp:PostBackTrigger ControlID="Button1" /></Triggers>
+        </asp:UpdatePanel>
+    </div>
+    </form>
+</body>
+</html>

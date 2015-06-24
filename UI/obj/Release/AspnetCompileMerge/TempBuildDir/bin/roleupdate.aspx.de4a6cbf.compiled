@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/System/OrgStruct/Role/RoleUpdate.aspx" hash="52e4a8c81" filehash="e1177bae6db5a1b" flags="110000" assembly="SoMe" type="ASP.system_orgstruct_role_roleupdate_aspx">
+  <filedeps>
+    <filedep name="/Master/MainAddUpdate.master" />
+    <filedep name="/System/OrgStruct/Role/RoleUpdate.aspx" />
+    <filedep name="/WebControls/Buttons1.ascx" />
+    <filedep name="/WebControls/PowerMenu.ascx" />
+    <filedep name="/WebControls/PowerRow.ascx" />
+    <filedep name="/WebControls/PowerServices.ascx" />
+  </filedeps>
+</preserve>

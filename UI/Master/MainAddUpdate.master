@@ -1,0 +1,214 @@
+﻿<%@ master language="C#" autoeventwireup="true" CodeBehind="MainAddUpdate.master.cs" inherits="MainAddUpdate" %>
+
+<%@ Register Src="~/WebControls/Buttons1.ascx" TagName="Buttons1" TagPrefix="uc1" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title id="lbtitle" runat="server">无标题页</title>
+    <base target="_self" />
+    <style type="text/css">
+        .Freezing
+        {
+            position: relative;
+            table-layout: fixed;
+            top: expression(this.offsetParent.scrollTop);
+            z-index: 10;
+        }
+        .Freezing th
+        {
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
+            padding: 2px;
+        }
+		 .mouthType
+        {
+        	cursor:hand; padding:3px 5px 0px 5px; background-color:#0F7CBF; color:#FFF; line-height:normal;
+        }
+		.page_input {border:1px solid #CCCCCC; padding:0 2px; background-color:#FFFFFF; }
+		.page_img { margin-bottom:-4px;}
+        .NumTextCss
+        {
+            ime-mode:disabled;	
+        }
+    </style>
+</head>
+<body style="background-color: #FFFFFF;">
+    
+    <script src="<%=QxRoom.Common.Public.RelativelyPath("jss/PageMethods.js") %>"type="text/javascript"></script>
+    <script src="<%=QxRoom.Common.Public.RelativelyPath("jss/PublicJS.js") %>"type="text/javascript"></script>
+
+    <script type="text/javascript">
+
+        function getServerMess_callback(res) {
+            alert(res.value);
+        }
+
+        function PageSubmit(val) {
+
+            //            windowFull();
+
+            if (val == "ibtcontrol_ibtadd") {
+                //IsDo("删除");
+                if (!confirm("您确定要新增吗？")) {
+                    val = "";
+                    return false;
+                }
+            }
+
+            if (val == "ibtcontrol_ibtupdate") {
+                //IsDo("删除");
+                if (!confirm("您确定要修改吗？")) {
+                    val = "";
+                    return false;
+                }
+            }
+
+            if (val == "ibtcontrol_ibtsave") {
+                //IsDo("删除");
+                if (!confirm("您确定要保存吗？")) {
+                    val = "";
+                    return false;
+                }
+            }
+
+            if (val == "ibtcontrol_ibtrefresh") {
+                {
+                    val = "";
+                    window.location.reload();
+                    return false;
+                }
+            }
+
+            if (val == "ibtcontrol_ibtimpower") {
+                //IsDo("授权");
+                if (!confirm("您确定要给该职员授权吗？")) {
+                    val = "";
+                    return false;
+                }
+            }
+
+            if (val == "ibtcontrol_ibtsetback") {
+                //IsDo("弃审");
+                if (!confirm("您确定要将该笔数据弃审吗？")) {
+                    val = "";
+                    return false;
+                }
+            }
+
+            if (val == "ibtcontrol_ibtrollback") {
+                //IsDo("退回");
+                if (!confirm("您确定要将该笔数据退回吗？")) {
+                    val = "";
+                    return false;
+                }
+            }
+
+            if (val == "ibtcontrol_ibtdelete") {
+                //IsDo("删除");
+                if (!confirm("您确定要删除该笔数据吗？")) {
+                    val = "";
+                    return false;
+                }
+            }
+
+            if (val == "ibtcontrol_ibtaudit") {
+                //IsDo("审核");
+                if (!confirm("您确定要执行该项操作吗？")) {
+                    val = "";
+                    return false;
+                }
+            }
+
+            if (val == "ibtcontrol_ibtapply") {
+                //IsDo("审批");
+                if (!confirm("您确定要执行该项操作吗？")) {
+                    val = "";
+                    return false;
+                }
+            }
+
+            if (val == "ibtcontrol_ibthuizong") {
+                //IsDo("审批");
+                if (!confirm("您确定要执行该项操作吗？")) {
+                    val = "";
+                    return false;
+                }
+            }
+
+            if (val == "ibtcontrol_ibtexit") {
+                try {
+                    IsClose();
+                } catch (e) { window.close(); }
+                return false;
+            }
+
+            //该按钮事件专门为 Excel 模板打印设置，没有该功能的话请勿将该按钮设置成显示状态，不然会报脚本错误
+            //如果客户愿意使用 Excel 自带的打印按钮则屏蔽该事件
+            //if (val == "ibtcontrol_ibtexcelprint") {
+            //    print();
+            //}
+
+            document.all('<%=ibtid.ClientID %>').value = val;
+        }
+        function FormOnSubmit() {
+            if (document.all('<%=ibtid.ClientID %>').value == "")
+                return false;
+
+            try {
+                return IsOnSubmit(document.getElementById("<%=ibtid.ClientID %>"));
+            } catch (e) { }
+            return true;
+        }
+    </script>
+
+    <form id="form1" runat="server" onsubmit="return FormOnSubmit()">
+    <asp:ScriptManager ID="ScriptManager1" runat="server">
+        <Scripts>
+            <asp:ScriptReference ScriptMode="Auto" Path="~/jss/GridViewChangeColor.js" />
+            <asp:ScriptReference ScriptMode="Auto" Path="~/jss/Qx_nz.js" />
+        </Scripts>
+    </asp:ScriptManager>
+    <div>
+        <asp:UpdatePanel ID="UpdatePanel1" runat="server">
+            <ContentTemplate>
+                <table cellspacing="0" cellpadding="0" border="0" width="100%">
+                    <tr>
+                        <td>
+                            <table width="100%" cellspacing="0" cellpadding="0" border="0">
+                                <tr>
+                                    <td id="td1" runat="server" height="55" style=" background-image: url(../images/new/backBar2.png);
+                                        width: 300px; display:none;">
+                                        <img src="" width="150" runat="server" id="titlePic" visible="false" />
+                                        <span id="spanTitle" style="font-size: 14px; width:500px; display:none;">&nbsp&nbsp<b><%=_strTitle %></b></span>
+                                    </td>
+                                    <td id="td2" runat="server" height="55" align="right" style="padding-top:5px;
+                                         background-image: url(../images/new/backBar2.png);">
+                                        <uc1:Buttons1 ID="Buttons1_1" runat="server" />
+                                        <input type="hidden" id="ibtid" name="ibtid" uid="ibtid" runat="server" />
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="border" style="width: 100%;">
+                            <asp:Panel ID="Panel1" runat="server" Height="700px" ScrollBars="Auto" Width="100%">
+                                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                                </asp:ContentPlaceHolder>
+                            </asp:Panel>
+                        </td>
+                    </tr>
+                </table>
+            </ContentTemplate>
+        </asp:UpdatePanel>
+    </div>
+    </form>
+<script>try {
+    //Public.js
+    setTimeout("SetColor()", 0);
+} catch (e) { alert(e); }
+</script>
+</body>
+</html>

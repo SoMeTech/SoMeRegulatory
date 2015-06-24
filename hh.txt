@@ -1,0 +1,12 @@
+select a.project_type_name,SUM(pd_project_money_total) from pd_project_type a,tb_project b WHERE a.project_type_code=b.pd_project_type AND b.pd_found_xz='01' AND trim(pd_project_input_company)='43102612' GROUP BY a.project_type_code,a.project_type_name
+
+
+
+
+SELECT project_type_code,project_type_name,pd_project_money_total FROM
+ (SELECT a.project_type_code,a.project_type_name,SUM(b.pd_project_money_total) pd_project_money_total from pd_project_type a left join tb_project b on a.project_type_code=b.pd_project_type 
+ WHERE b.pd_found_xz='01' GROUP BY a.project_type_code,a.project_type_name
+ union ALL
+ SELECT distinct b.project_type_code||a.pd_project_code AS  project_type_code,pd_project_name,pd_project_money_total  FROM tb_project a,pd_project_type b WHERE a.pd_project_type=b.project_type_code AND a.pd_found_xz='01'
+ )
+ORDER BY project_type_code,project_type_name

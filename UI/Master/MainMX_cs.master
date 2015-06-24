@@ -1,0 +1,319 @@
+﻿<%@ master language="C#" autoeventwireup="true" CodeBehind="MainMX_cs.master.cs" inherits="MainMX_cs" %>
+
+<%@ Register Src="~/WebControls/Buttons1.ascx" TagName="Buttons1" TagPrefix="uc1" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title id="lbtitle" runat="server">无标题页</title>
+    <base target="_self" />
+    <style type="text/css">
+        .Freezing
+        {
+            position: relative;
+            table-layout: fixed;
+            top: expression(this.offsetParent.scrollTop);
+            z-index: 10;
+        }
+        .Freezing thMainMX_cs
+        {
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
+            padding: 2px;
+        }
+        .BackBar
+        {
+            background-image: url(/images/new/backBar.png);
+        }
+        .label
+        {
+            border: 1px solid #999999;
+            padding: 2px;
+        }
+        .noneDisplay
+        {
+            display: none;
+        }
+        .mouthType
+        {
+            cursor: hand;
+            padding: 3px 5px 0px 5px;
+            background-color: #0F7CBF;
+            color: #FFF;
+            line-height: normal;
+        }
+        .inputs
+        {
+            border-bottom-color: Gray;
+            border-left-color: Gray;
+        }
+        .page_input
+        {
+            border: 1px solid #CCCCCC;
+            padding: 0 2px;
+            background-color: #FFFFFF;
+        }
+        .page_img
+        {
+            margin-bottom: -4px;
+        }
+        .tKeepAll
+        {
+            width: 100%;
+        }
+        .tKeepAll th
+        {
+            word-break: keep-all;
+            white-space: nowrap;
+        }
+        .tKeepAll td
+        {
+            word-break: keep-all;
+            white-space: nowrap;
+        }
+        .NumTextCss
+        {
+            ime-mode: disabled;
+        }
+    </style>
+</head>
+<body style="background-color: #FFFFFF;">
+
+    <script src="<%=QxRoom.Common.Public.RelativelyPath("jss/PageMethods.js") %>" type="text/javascript"></script>
+
+    <script src="<%=QxRoom.Common.Public.RelativelyPath("jss/PublicJS.js") %>" type="text/javascript"></script>
+
+    <script type="text/javascript">
+
+        //屏蔽右键
+        function document.oncontextmenu() {
+            //return false;
+        }
+        
+        function getServerMess_callback(res) {
+            alert(res.value);
+        }
+
+        function RefreshPage() {
+            var prm = Sys.WebForms.PageRequestManager.getInstance();
+            prm._doPostBack('<%= UpdatePanel2.ClientID %>', '');
+        }
+
+        function PageSubmit(val) {
+
+            windowFull();
+            //alert(val);
+            if (val == "ibtcontrol_ibtrefresh") {
+                val="";
+                window.location.reload();
+                
+            }
+
+            if (val == "ibtcontrol_ibtimpower") {
+                //window.parent.IsDo("授权");
+                if (!confirm("您确定要给该职员授权吗？"))
+                {
+                    val="";
+                    return false;
+                }
+            }
+
+            if (val == "ibtcontrol_ibtsetback") {
+                //window.parent.IsDo("弃审");
+                if (!confirm("您确定要将该笔数据弃审吗？"))
+                {
+                    val="";
+                    return false;
+                }
+            }
+
+            if (val == "ibtcontrol_ibtrollback") {
+                //window.parent.IsDo("退回");
+                if (!confirm("您确定要将该笔数据退回吗？"))
+                {
+                    val="";
+                    return false;
+                }
+            }
+
+            if (val == "ibtcontrol_ibtaudit") {
+                //IsDo("审核");
+                if (!confirm("您确定要执行该项操作吗？"))
+                {
+                    val="";
+                    return false;
+                }
+            }
+
+            if (val == "ibtcontrol_ibtapply") {
+                //IsDo("审批");
+                if (!confirm("您确定要执行该项操作吗？"))
+                {
+                    val="";
+                    return false;
+                }
+            }
+
+            if (val == "ibtcontrol_ibtdelete") {
+                //window.parent.IsDo("删除");
+                if (!confirm("您确定要该笔数据删除吗？"))
+                    return false;
+            }
+
+            //查看日志
+            if (val == "ibtcontrol_ibtlook") {
+                try{
+                    val="";
+                    openLog();
+                }catch(e){};
+                return false;
+            }
+            if (val == "ibtcontrol_ibtputout") {
+                try{
+                    val="";
+                    openPrint();
+                }catch(e){};
+                return false;
+            }
+
+            if (val == "ibtcontrol_ibtexit") {
+                val="";
+                try{
+                    window.parent.IsCloseTab();
+                }catch(e){window.close();}
+            }
+            document.all('<%=ibtid.ClientID %>').value = val;
+        }
+        function setMenuHeight()
+        {
+            //Public.js
+            SetColor();
+        
+            setHeight();
+        }
+        function IsSubmit()
+        {
+            if(document.all('<%=ibtid.ClientID %>').value=="")
+        {
+            removeWindowFull();
+            return false;
+        }
+        else if(document.all('<%=ibtid.ClientID %>').value!="ibtcontrol_ibtsave")
+            removeWindowFull();
+        else{
+            //内容页如需提交时验证，需实现IsOnSubmit()方法。
+            try{ return PublicYanZheng();// IsOnSubmit(document.getElementById("<%=ibtid.ClientID %>")); 
+            }catch(e){alert(e);}
+        }
+    return true;
+}
+function setHeight()
+{
+    var strCookie=document.cookie;
+    var arrCookie=strCookie.split("; ");
+    var hei = 800;
+    for(var i=0;i<arrCookie.length;i++){
+        var arr=arrCookie[i].split("=");
+        if("allhei"==arr[0]){
+            hei=arr[1];
+            break;
+        }
+    }
+    var heig1=63;
+    var heig2=280;
+    var heig3=hei-heig1-heig2-115;
+        
+    //设置框架上部分高度
+    //        $("div[uid='Panel1']").get(0).style.height = heig2;
+    //$("#tb_top").get(0).style.height = heig2;
+    //$("#tdPanel2").get(0).style.height =10;
+    //$("#tdPanel2").get(0).firstChild.firstChild.style.height =heig3;
+        
+        
+    //        alert($("*[uid='Panel1']").get(0).offsetHeight);
+    //        alert($("*[uid='Panel1']").get(0).firstChild.offsetHeight);
+    //        alert(iframeTopHeight);
+    //        if(iframeTopHeight>300)
+    //            iframeTopHeight=300;
+    //        else if(iframeTopHeight<200)
+    //            iframeTopHeight=300;
+    ////        alert(iframeTopHeight);
+    //        $("*[uid='Panel1']").get(0).style.height=iframeTopHeight;
+    //        $("*[uid='Panel1']").get(0).firstChild.style.height=iframeTopHeight;
+        
+    //        var MainMxTable = document.getElementById('MainMxTable');
+    //        var MainMxTable=$("table[uid='MainMxTable']").get(0);
+    //        MainMxTable.rows[2].firstChild.firstChild.firstChild.style.height=hei-(MainMxTable.rows[0].offsetHeight+MainMxTable.rows[1].offsetHeight+72);
+    //MainMxTable.rows[2].firstChild.firstChild.firstChild.style.height=hei-(MainMxTable.rows[0].offsetHeight+MainMxTable.rows[1].offsetHeight+53);
+    //alert(hei-MainMxTable.rows[2].firstChild.firstChild.firstChild.offsetHeight);
+    if($("div[uname='div_file']").length>0)
+    {
+        $("div[uname='div_file']").get(0).parentNode.style.height=heig3+20;
+        $("div[uname='div_file']").attr("style","text-align:left;position:absolute;top:25px;left:10px;width:99%;overflow:auto;height:"+heig3+"px");
+    }
+    $("div[uid='Panel1']").css({position:'relative'});
+    //$("table",MainMxTable.rows[2]).attr("class","tKeepAll");
+        
+    //        $("table[uid='MainMxTable']").get(0).rows[2].style.textAlign="left" ;
+    //        $("table[uid='MainMxTable']").get(0).rows[2].style.verticalAlign="top"
+}
+function FormOnLoad()
+{
+    alert('ok');
+}
+    </script>
+ 
+
+
+    <form id="form1" runat="server" onsubmit="return IsSubmit();">
+    <asp:ScriptManager ID="ScriptManager1" runat="server">
+        <Scripts>
+            <asp:ScriptReference ScriptMode="Auto" Path="~/jss/GridViewChangeColor.js" />
+            <asp:ScriptReference ScriptMode="Auto" Path="~/jss/Qx_nz.js" />
+        </Scripts>
+    </asp:ScriptManager>
+    <div>
+        <asp:UpdatePanel ID="UpdatePanel1" runat="server">
+            <ContentTemplate>
+                <div id='MainMxTable' uid='MainMxTable' width="100%">
+                    <div>
+                        <table width="100%" cellspacing="0" cellpadding="0" border="0">
+                            <tr>
+                                <td id="td1" runat="server" height="55" style="background-image: url(../images/new/backBar2.png);
+                                    display: none;">
+                                    <img src="" width="150" runat="server" id="titlePic" visible="false" />
+                                    <span id="spanTitle" style="font-size: 14px; display: none;">&nbsp&nbsp<b><%=strTitle %></b></span>
+                                </td>
+                                <td id="td2" runat="server" height="55" align="right" style="padding-top: 5px; background-image: url(../images/new/backBar2.png);">
+                                    <uc1:Buttons1 ID="Buttons1_1" runat="server" />
+                                    <input type="hidden" id="ibtid" name="ibtid" uid='ibtid' runat="server" />
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div style="width: 100%;">
+                        <asp:Panel ID="Panel1" uid="Panel1" runat="server" ScrollBars="Auto" Width="100%">
+                            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                            </asp:ContentPlaceHolder>
+                        </asp:Panel>
+                    </div>
+                    <div id="tdPanel2" style="width: 100%; text-align: center;">
+                        <asp:UpdatePanel ID="UpdatePanel2" runat="server" UpdateMode="Conditional">
+                            <ContentTemplate>
+                                <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+                                </asp:ContentPlaceHolder>
+                            </ContentTemplate>
+                        </asp:UpdatePanel>
+                    </div>
+                </div>
+            </ContentTemplate>
+        </asp:UpdatePanel>
+    </div>
+    </form>
+
+    <script>
+        setTimeout("setMenuHeight()", 0);
+    </script>
+
+</body>
+</html>

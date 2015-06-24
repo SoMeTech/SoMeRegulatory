@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/Shared/DiagList/DepaSelect.aspx" hash="52e4a8c81" filehash="2d5462c76f81" flags="110000" assembly="SoMe" type="ASP.shared_diaglist_depaselect_aspx">
+  <filedeps>
+    <filedep name="/Shared/DiagList/DepaSelect.aspx" />
+  </filedeps>
+</preserve>

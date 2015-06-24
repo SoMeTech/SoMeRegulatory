@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/System/Menu/ShowUrl.aspx" hash="52e4a8c81" filehash="1e69f468808de3c9" flags="110000" assembly="SoMe" type="ASP.system_menu_showurl_aspx">
+  <filedeps>
+    <filedep name="/System/Menu/ShowUrl.aspx" />
+    <filedep name="/WebControls/Buttons1.ascx" />
+    <filedep name="/WebControls/FileShow.ascx" />
+  </filedeps>
+</preserve>

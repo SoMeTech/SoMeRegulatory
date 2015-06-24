@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/Work/XMGL/PfMx.aspx" hash="52e4a8c81" filehash="b97c33014a4bfc4f" flags="110000" assembly="SoMe" type="ASP.work_xmgl_pfmx_aspx">
+  <filedeps>
+    <filedep name="/Master/MainMX.master" />
+    <filedep name="/WebControls/Buttons1.ascx" />
+    <filedep name="/WebControls/UserControl/FilePostCtr.ascx" />
+    <filedep name="/Work/XMGL/PfMx.aspx" />
+  </filedeps>
+</preserve>

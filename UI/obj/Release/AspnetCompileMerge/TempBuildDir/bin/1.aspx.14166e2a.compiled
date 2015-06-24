@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/Shared/DiagList/1.aspx" hash="52e4a8c81" filehash="ffffbabf37943a90" flags="110000" assembly="SoMe" type="ASP.shared_diaglist_1_aspx">
+  <filedeps>
+    <filedep name="/Shared/DiagList/1.aspx" />
+  </filedeps>
+</preserve>

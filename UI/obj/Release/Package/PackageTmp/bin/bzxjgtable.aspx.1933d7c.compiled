@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/Report/bzxJGTable.aspx" hash="52e4a8c81" filehash="c46938f0a801d0d9" flags="110000" assembly="SoMe" type="ASP.report_bzxjgtable_aspx">
+  <filedeps>
+    <filedep name="/Report/bzxJGTable.aspx" />
+    <filedep name="/WebControls/reprotButtonl.ascx" />
+  </filedeps>
+</preserve>

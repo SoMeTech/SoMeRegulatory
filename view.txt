@@ -1,0 +1,19 @@
+CREATE OR REPLACE VIEW VIEW_ZXZJSYQKB_XM AS
+SELECT project_type_code 项目代码,project_type_name 项目类别,pd_project_money_total 金额,PD_PROJECT_SYRS 受益人数,PD_PROJECT_CONTENT 建设内容,pd_project_input_company FROM
+        (SELECT a.project_type_code,a.project_type_name,SUM(b.pd_project_money_total) AS pd_project_money_total,sum(b.PD_PROJECT_SYRS) AS PD_PROJECT_SYRS,'' PD_PROJECT_CONTENT,b.pd_project_input_company from pd_project_type a left join tb_project b on a.project_type_code=b.pd_project_type
+        WHERE b.pd_found_xz='01' and  b.PD_PROJECT_ISBXK='0'
+  GROUP BY a.project_type_code,a.project_type_name,b.pd_project_input_company
+       union ALL
+SELECT distinct b.project_type_code||a.pd_project_code AS  project_type_code,a.pd_project_name,a.pd_project_money_total,a.PD_PROJECT_SYRS,PD_PROJECT_CONTENT,A.pd_project_input_company  FROM tb_project a,pd_project_type b WHERE a.pd_project_type=b.project_type_code AND a.pd_found_xz='01'
+ and a.PD_PROJECT_ISBXK='0'
+)ORDER BY project_type_code,project_type_name;
+
+
+//b.pd_year问题未解决
+
+
+
+create or replace view view_zxzjsyqkb_bt as
+select a.project_type_code 资金代码,a.project_type_name 资金名称,SUM(b.PD_PROJECT_BZNUM)  补助数量, SUM(b.pd_project_bzmoney) 金额,b.pd_project_input_company  
+from pd_project_type a left join tb_project b on a.project_type_code=b.pd_project_type  WHERE b.pd_found_xz='02'
+ AND b.pd_year='2015' GROUP BY a.project_type_code,a.project_type_name,b.pd_project_input_company;

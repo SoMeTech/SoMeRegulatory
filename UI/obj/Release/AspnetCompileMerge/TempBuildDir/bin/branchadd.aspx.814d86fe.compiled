@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/System/OrgStruct/Branch/BranchAdd.aspx" hash="52e4a8c81" filehash="17856ee1c7a6c592" flags="110000" assembly="SoMe" type="ASP.system_orgstruct_branch_branchadd_aspx">
+  <filedeps>
+    <filedep name="/Master/MainAddUpdate.master" />
+    <filedep name="/System/OrgStruct/Branch/BranchAdd.aspx" />
+    <filedep name="/WebControls/Buttons1.ascx" />
+    <filedep name="/WebControls/PowerCompany.ascx" />
+  </filedeps>
+</preserve>

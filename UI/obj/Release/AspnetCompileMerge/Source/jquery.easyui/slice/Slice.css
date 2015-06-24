@@ -1,0 +1,88 @@
+﻿body
+{
+}
+#slice
+{
+	width: 215px;
+	height: 170px;
+	position: absolute;
+	overflow: hidden;
+	/*margin: 0 auto;
+	top: 210px;
+	left: 841px;
+	margin-bottom:20px;	*/
+	
+ 
+}
+#slice img
+
+{
+	 z-index:0;
+	}
+.nivo-box
+{
+	display: block;
+	position: absolute;
+	z-index: 5;
+	overflow: hidden;
+}
+.nivo-box img
+{
+	display: block;
+}
+.nivo-controlNav
+{
+	position: absolute;
+	bottom: 10px;
+	right: 5px;
+	line-height: 16px;
+	font-family: "宋体";
+	font-size: 12px;
+	z-index: 999;
+}
+.nivo-controlNav a
+{
+	display: block;
+	width: 16px;
+	height: 16px;
+	text-align: center;
+	margin: 0 2px;
+	font-weight: bold;
+	background: url(img/js_num_a.gif) no-repeat;
+	border: 0;
+	float: left;
+}
+.nivo-controlNav a.active
+{
+	background-position: 0 -22px;
+	background: url(img/js_num_hover.gif) no-repeat;
+	color: #FFF;
+}
+.nivo-caption
+{
+	position: absolute;
+	text-shadow: none;
+	font-family: Helvetica, Arial, sans-serif;
+	text-align: center;
+	z-index: 998;
+}
+.nivo-caption a
+{
+	color: #000;
+	text-decoration: underline;
+}
+a
+{
+	color: #333;
+}
+a:link, a:visited
+{
+	text-decoration: none;
+	cursor: pointer;
+}
+a:hover, a:active, a:focus
+{
+	text-decoration: underline;
+	outline: 0;
+	cursor: pointer;
+}

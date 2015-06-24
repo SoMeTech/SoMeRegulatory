@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/Master/Report.master" hash="52e4a8c81" filehash="1ac675dd92c54253" flags="110000" assembly="SoMe" type="ASP.master_report_master">
+  <filedeps>
+    <filedep name="/Master/Report.master" />
+    <filedep name="/WebControls/ReportOrderControl.ascx" />
+  </filedeps>
+</preserve>

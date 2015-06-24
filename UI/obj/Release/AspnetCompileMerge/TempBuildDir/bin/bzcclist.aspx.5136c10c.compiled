@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/Work/BZ/CCXC/bzCCList.aspx" hash="52e4a8c81" filehash="499c888fc49b21f8" flags="110000" assembly="SoMe" type="ASP.work_bz_ccxc_bzcclist_aspx">
+  <filedeps>
+    <filedep name="/Master/One.master" />
+    <filedep name="/WebControls/Buttons1.ascx" />
+    <filedep name="/WebControls/PageNavigator.ascx" />
+    <filedep name="/WebControls/WebOrderControl.ascx" />
+    <filedep name="/Work/BZ/CCXC/bzCCList.aspx" />
+  </filedeps>
+</preserve>

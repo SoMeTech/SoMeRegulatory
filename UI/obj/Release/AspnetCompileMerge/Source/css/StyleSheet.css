@@ -1,0 +1,30 @@
+﻿BODY
+{
+	font-size: 12px;
+}
+
+TABLE
+{
+	border-style:solid;
+	border-width: 1px;
+	font-size: 12px;
+	border-collapse: collapse;
+	border-spacing: 0;
+	width:100%;
+	margin-top: 0px;
+	text-align:center;
+	
+}
+@media print
+{
+	.buttonNoPrint
+	{
+			
+	border-top: none;
+	border-right: none;
+	border-bottom: none;
+	border-left: none;
+			
+	}
+}
+		

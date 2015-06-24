@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/ChangeService.aspx" hash="52e4a8c81" filehash="ffffe53ef295b34b" flags="110000" assembly="SoMe" type="ASP.changeservice_aspx">
+  <filedeps>
+    <filedep name="/ChangeService.aspx" />
+  </filedeps>
+</preserve>

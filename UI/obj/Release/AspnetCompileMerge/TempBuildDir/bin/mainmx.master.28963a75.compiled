@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/Master/MainMX.master" hash="52e4a8c81" filehash="544be543e4e1fd57" flags="110000" assembly="SoMe" type="ASP.master_mainmx_master">
+  <filedeps>
+    <filedep name="/Master/MainMX.master" />
+    <filedep name="/WebControls/Buttons1.ascx" />
+  </filedeps>
+</preserve>

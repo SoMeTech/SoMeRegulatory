@@ -1,0 +1,24 @@
+
+时间：2015-06-16 00:00:50。类：EIP_User.Login，方法：TryCon()，信息：ORA-01017: invalid username/password; logon denied
+。
+
+时间：2015-06-16 00:10:43。类：ASP.work_jczlwh_gnfl_aspx，方法：ShowData()，信息：ORA-00923: 未找到要求的 FROM 关键字
+ORA-06512: 在 "ZJJG.GETDATASET", line 35
+ORA-06512: 在 line 1
+。
+
+
+时间：2015-06-16 00:19:34。类：ASP.work_jczlwh_gnfl_aspx，方法：ShowData()，信息：未将对象引用设置到对象的实例。。
+
+
+时间：2015-06-16 00:36:04。类：ASP.work_jczlwh_gnfl_aspx，方法：ShowData()，信息：表达式包含未定义的函数调用 length()。。
+
+
+时间：2015-06-16 08:51:18。类：ASP.work_jczlwh_gnfl_aspx，方法：ShowData()，信息：表达式包含未定义的函数调用 if()。。
+
+
+时间：2015-06-16 08:51:46。类：ASP.work_jczlwh_gnfl_aspx，方法：ShowData()，信息：表达式包含未定义的函数调用 if()。。
+
+
+时间：2015-06-16 08:58:46。类：ASP.work_jczlwh_gnfl_aspx，方法：ShowData()，信息：表达式包含不支持的运算符“&”。。
+

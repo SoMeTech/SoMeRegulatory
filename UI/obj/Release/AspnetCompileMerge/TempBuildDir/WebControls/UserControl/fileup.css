@@ -1,0 +1,121 @@
+﻿/*上传样式*/
+form
+{
+	margin: 0;
+	padding: 0;
+}
+.fileUpArea
+{
+	width: 80px;
+	height: 20px;
+	float: right;
+	background: url(images/addfile.gif) no-repeat left top;
+	position: relative;
+	overflow: hidden;
+	margin-top:3px;
+}
+.fileHover
+{
+	width: 80px;
+	height: 20px;
+	background: url(images/addfilehover.gif) no-repeat left top;
+	position: relative;
+	overflow: hidden;
+	margin-top:3px;
+}
+.filedownArea
+{
+	width: 80px;
+	height: 20px;
+	float: right;
+	background: url(images/downfile.png) no-repeat left top;
+	position: relative;
+	overflow: hidden;
+	margin-top:3px;
+}
+.downfileHover
+{
+	width: 80px;
+	height: 20px;
+	background: url(images/downfilehover.png) no-repeat left top;
+	position: relative;
+	overflow: hidden;
+	margin-top:3px;
+}
+
+
+/*.fileinput{ width:60px;size:1%; position:absolute; margin-left:10px;margin-top:1px;filter:alpha(opacity=0);-moz-opacity:0;cursor:point;}
+       
+        #fileUpArea input{ width:60px;size:1%; position:absolute; margin-left:10px;margin-top:1px;filter:alpha(opacity=0);-moz-opacity:0;cursor:point;}*/
+.fileinput
+{
+	font-size: 20px;
+	cursor: pointer;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	filter: alpha(opacity=0);
+	opacity: 0;
+	outline: none;
+	hide-focus: expression(this.hideFocus=true);
+	
+}
+.filetxt
+{
+	font-size: 12px;
+	color: #0066FF;
+	padding: 10px;
+	float:left;
+	width:500px;
+	text-align:left;
+}
+#filetxt img
+{
+	cursor: hand;
+}
+.spanstate
+{
+	font-size: 11px;
+	color: #0099FF;
+	padding: 10px;
+}
+
+
+/*上传样式*/
+/*file样式*/
+/*#idPicFile {
+	width:80px;height:20px;overflow:hidden;position:relative;
+	
+}'
+#idPicFile input {
+	font-size:20px;cursor:pointer;
+	position:absolute;right:0;bottom:0;
+	filter:alpha(opacity=0);opacity:0;
+	outline:none;hide-focus:expression(this.hideFocus=true);
+}*/
+
+.tablelist_a
+{
+	border-left: 1px solid #CCC;
+	border-top: 1px solid #CCC;
+}
+.tablelist_a th
+{
+	/*
+	border-bottom: 1px solid #CCC;
+	border-right: 1px solid #CCC;
+	background-color: #E7E7E7;	*/
+	padding: 4px;
+	text-align: center;
+	font-weight: bold;
+	color: #333;
+}
+.tablelist_a td
+{	 
+	/*border-bottom: 1px solid #CCC;
+	border-right: 1px solid #CCC;
+	background-color: #FFFFFF;	 */
+	padding: 4px;
+	text-align: center;
+	color: #333;
+}

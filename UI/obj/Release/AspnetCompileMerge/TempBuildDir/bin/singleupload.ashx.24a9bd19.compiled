@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="2" virtualPath="/jquery.easyui/Tools/SingleUpload.ashx" hash="280d0c19" filehash="5247dd83829" flags="110000" assembly="SoMe" type="SingleUpload">
+  <filedeps>
+    <filedep name="/jquery.easyui/Tools/SingleUpload.ashx" />
+  </filedeps>
+</preserve>

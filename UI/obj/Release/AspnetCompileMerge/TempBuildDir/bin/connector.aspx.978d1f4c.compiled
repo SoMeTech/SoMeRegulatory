@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/fckeditor/editor/filemanager/connectors/aspx/connector.aspx" hash="52e4a8c81" filehash="bc7d001249fa9db9" flags="110000" assembly="SoMe" type="ASP.fckeditor_editor_filemanager_connectors_aspx_connector_aspx">
+  <filedeps>
+    <filedep name="/fckeditor/editor/filemanager/connectors/aspx/config.ascx" />
+    <filedep name="/fckeditor/editor/filemanager/connectors/aspx/connector.aspx" />
+  </filedeps>
+</preserve>

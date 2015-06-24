@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/WebControls/FileShow.ascx" hash="52e4a8c81" filehash="2d19268262be" flags="110000" assembly="SoMe" type="ASP.webcontrols_fileshow_ascx">
+  <filedeps>
+    <filedep name="/WebControls/FileShow.ascx" />
+  </filedeps>
+</preserve>

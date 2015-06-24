@@ -1,0 +1,400 @@
+.pageBody{
+	background-repeat: repeat-x;
+	background-position: bottom;
+}
+.globalBody{
+	position: absolute;
+	left: 30px;
+	top: 20px;
+}
+.menuBody{
+  background-attachment: fixed;
+	font-family:宋体;
+	font-size:14;
+	background-color: #CFDBF1;
+}
+.tabHeadArea {
+  height:24px;
+	overflow: visible;
+  align:center;
+  color:#FFFFFF;
+	font-size: 14px;
+  border-width:0px;
+  cursor:hand;
+}
+.tabImg{
+  height:24px;
+  width:18px;
+}
+.clsMsg{
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	right: 0px;
+	bottom: 0px;
+	border: 1px solid;
+	z-index: 100;
+}
+.menuFont{
+	color: #122B6A;
+}
+.clsMsgTxt{
+	text-align: center;
+	vertical-align: middle;
+}
+.clsTabHead{
+	font : 12px 宋体;
+  cursor:hand;
+}
+
+.tabBody {
+	background-color: #FFFFFF;
+	border-top-width: 1px;
+	border-right-width: 0px;
+	border-bottom-width: 1px;
+	border-left-width: 0px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-top-color: #000000;
+	border-right-color: #000000;
+	border-bottom-color: #000000;
+	border-left-color: #000000;
+}
+.foreignIMG{
+	cursor:hand;
+	border: #FFFFFF 1px solid;
+}
+
+.clsCall{
+	background : White;
+	border : 0px;
+	font : 12px 宋体;
+  cursor: hand;
+}
+.hideArea{
+  display:none;
+  overflow:hidden
+}
+.clsPaginationCall {
+	background : transparent;
+	border : 0px;
+	font : 12px 宋体;
+	cursor : hand;
+}
+.clsPaginationLabel {
+	background :transparent;
+	font : 12px 宋体;
+}
+.clsListCall {
+  color: black;
+	cursor: hand;
+  background: img/main/toolbar_bg.gif;
+	font: 8pt "MS Sans Serif";
+  border:0;
+}
+.clsListCallEdit {
+  color: black;
+	cursor: hand;
+  background: transparent;
+	font: 8pt "MS Sans Serif";
+  border:0;
+}
+.clsSelectTable {
+	FONT-SIZE: 12pt;
+	FONT-STYLE: normal;
+	FONT-VARIANT: normal;
+	FONT-WEIGHT: normal;
+	LINE-HEIGHT: normal;
+	FONT-FAMILY: 宋体;
+}
+.largest {
+	background-repeat: repeat-x;
+	height: 23px;
+}
+.normalFieldCaption {
+	FONT-FAMILY: 宋体;
+	FONT-SIZE: 12px;
+  overflow: visible;
+  vertical-align:middle
+}
+.keyFieldCaption {
+	FONT-FAMILY: 宋体;
+	FONT-SIZE: 12px;
+
+  overflow: visible;
+	font-weight: bold;
+}
+.normalFieldEdit {
+	BACKGROUND-COLOR: transparent;
+	BORDER-BOTTOM: 0px groove #B8B8B8;
+	BORDER-LEFT: 0px ;
+	BORDER-RIGHT: 0px;
+	BORDER-TOP: 0px;
+	COLOR: #60BBFF;
+	FONT-FAMILY: 宋体;
+	FONT-SIZE: 13px;
+}
+.normalFieldEditMain {
+	BACKGROUND-COLOR: transparent;
+	BORDER-BOTTOM: 1px groove #B8B8B8;
+	BORDER-LEFT: 0px ;
+	BORDER-RIGHT: 0px;
+	BORDER-TOP: 0px;
+	COLOR: #60BBFF;
+	FONT-FAMILY: 宋体;
+	FONT-SIZE: 13px;
+}
+.asterisk {
+  color: #FF0000;
+}
+.clsMemo{
+	BACKGROUND-COLOR: white;
+	BORDER: 1px solid #60BBFF;
+	COLOR: #60BBFF;
+	FONT-FAMILY: 宋体;
+	FONT-SIZE: 13px;
+}
+.menuitems {
+	padding-left:15px;
+	padding-right : 10px;
+}
+
+.clsGridContainer{
+	font-family: MS Sans Serif;
+	background-color: #FFFFFF;
+	margin: 0px;
+	padding: 0px;
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-top-color: silver;
+	border-right-color: silver;
+	border-bottom-color: silver;
+	border-left-color: silver;
+	overflow: hidden;
+	position: relative;
+}
+
+.clsGridHeadTable {
+	background-color: #7284AA;
+	position: absolute;
+	visibility: visible;
+	left: 0px;
+	top: 0px;
+}
+
+.clsCHK{
+  width: 28px;
+}
+
+.clsGridHeadCell {
+  align: center;
+	font-family: MS Sans Serif;
+	font-size: 12px;
+	color: #FFFFFF;
+	margin: 0px;
+	overflow: hidden;
+	text-decoration: underline;
+  cursor:hand;
+}
+
+.clsGridHeadKeyCell {
+  align: center;
+	font-family: MS Sans Serif;
+	font-size: 12px;
+	color: #FFFFFF;
+	margin: 0px;
+	overflow: hidden;
+	text-decoration: underline;
+  cursor:hand;
+	font-weight: bold;
+}
+
+.clsGridHeadGroup {
+	font-family: MS Sans Serif;
+	font-size: 12px;
+	color: #FFFFFF;
+	margin: 0px;
+	overflow: hidden;
+}
+
+.clsGridBody {
+	overflow: auto;
+	position: absolute;
+	left: 0;
+	scrollbar-base-color: #E1E1E1;
+}
+
+.clsGridBodyTable{
+  table-layout: fixed;
+	font-family: MS Sans Serif;
+	font-size: 12px;
+}
+
+.clsGridBodyNum{
+	text-align: right;
+}
+
+.clsColResize{
+  CURSOR: col-resize;
+}
+
+.clsSlide{
+LEFT: 27px;  WIDTH: 1px;VISIBILITY: hidden; POSITION: absolute; TOP: 50px;
+HEIGHT: 265px; BACKGROUND-COLOR: white; Z-INDEX: 100;display: none
+}
+
+.clsReportTitle{
+  letter-spacing: 1em;
+  text-align: center;
+	font-family:MS Sans Serif;
+	font-size:16px;
+	font-weight: bold;
+}
+
+.clsSearchHead{
+	BACKGROUND-COLOR: #0094ff;
+}
+
+.clsSearchRow{
+	BACKGROUND-COLOR: #E7E7E7;
+}
+
+.td{
+	font-size: 12px;
+}
+
+.tsz{
+	font-size: 12px;
+	color: #ffffff;
+	background-color: #4272D7;
+}
+
+.td2{
+	font-size: 12px;
+	background-color: #F1F5FF;
+}
+
+.rightKeyMenu{
+	position:absolute;
+	width:120px;
+	border-top: thin outset #FFFFFF;
+	border-right: thin outset #333333;
+	border-bottom: thin outset #333333;
+	border-left: thin outset #FFFFFF;
+	background-color:menu;
+	font-family: 宋体;
+	font-size: 9pt;
+	line-height:20px;
+	cursor:default;
+	visibility:hidden;
+}
+
+.clsPopMenu{
+	position:absolute;
+ left:1px;
+ top:1px;
+	border-top: thin outset #FFFFFF;
+	border-right: thin outset #333333;
+	border-bottom: thin outset #333333;
+	border-left: thin outset #FFFFFF;
+	background-color:menu;
+	font-family: 宋体;
+	font-size: 12px;
+	line-height:20px;
+	cursor:default;
+	visibility:hidden;
+}
+
+.menuitems{
+	padding-left:1px;
+	padding-right:1px;
+}
+
+.clsTreeNode{
+	font-family: 宋体;
+	font-size: 9pt;
+	cursor:hand;
+  border:0px;
+  background-color:#FFFFFF;
+  text-align:left;
+}
+
+.clsMenuContainer{
+	font-family: MS Sans Serif;
+	background-color: #FFFFFF;
+	margin: 0px;
+	padding: 0px;
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-top-color: silver;
+	border-right-color: silver;
+	border-bottom-color: silver;
+	border-left-color: silver;
+	overflow: hidden;
+	position: relative;
+        height: 320px;
+        width: 480px;
+        overflow: auto;
+}
+.clsDXJE{
+  color:blue;
+}
+.clsGeneralBtn{
+	font : 16px 宋体;
+  cursor: hand;
+}
+.normalDateField {
+	BACKGROUND-COLOR: white;
+	BORDER-BOTTOM: 5px groove #B8B8B8;
+	BORDER-LEFT: 0px ;
+	BORDER-RIGHT: 0px;
+	BORDER-TOP: 0px;
+	COLOR: blue;
+	FONT-FAMILY: 宋体;
+	FONT-SIZE: 14px;
+  height: 20px;
+}
+.srButton{
+   border-style: solid;
+   border-width: 1;
+   border-color: black;
+   padding-top: 1;
+   padding-bottom: 2;
+   cursor:hand
+}
+.srButton2{
+   background-color: #C0C0C0;
+   color: #0000FF;
+   font-size: 10pt;
+   border-style: ridge;
+   cursor:hand;
+}
+.clsPrintTemplateBtn {
+  color: White;
+	cursor: hand;
+  background: img/main/toolbar_bg.gif;
+	font: 11pt "MS Sans Serif";
+	valign:bottom;
+  border:0;
+}
+.clsStatSearchCallEdit {
+  color: black;
+	cursor: hand;
+  background: transparent;
+	font: 8pt "MS Sans Serif";
+  border:0;
+}

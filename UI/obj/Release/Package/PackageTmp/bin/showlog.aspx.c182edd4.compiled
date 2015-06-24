@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/Work/PublicAspx/ShowLog.aspx" hash="52e4a8c81" filehash="2f005107c27f7ef7" flags="110000" assembly="SoMe" type="ASP.work_publicaspx_showlog_aspx">
+  <filedeps>
+    <filedep name="/WebControls/Buttons1.ascx" />
+    <filedep name="/Work/PublicAspx/ShowLog.aspx" />
+  </filedeps>
+</preserve>

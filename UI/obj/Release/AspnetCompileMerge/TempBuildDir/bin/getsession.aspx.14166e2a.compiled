@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/Shared/DiagList/GetSession.aspx" hash="52e4a8c81" filehash="3cfac77deec" flags="110000" assembly="SoMe" type="ASP.shared_diaglist_getsession_aspx">
+  <filedeps>
+    <filedep name="/Shared/DiagList/GetSession.aspx" />
+  </filedeps>
+</preserve>

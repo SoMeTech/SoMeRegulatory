@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/Work/DataPrint/companyToDataAdd.aspx" hash="52e4a8c81" filehash="497cd7f140157d3a" flags="110000" assembly="SoMe" type="ASP.work_dataprint_companytodataadd_aspx">
+  <filedeps>
+    <filedep name="/Master/MainMX.master" />
+    <filedep name="/WebControls/Buttons1.ascx" />
+    <filedep name="/Work/DataPrint/companyToDataAdd.aspx" />
+  </filedeps>
+</preserve>

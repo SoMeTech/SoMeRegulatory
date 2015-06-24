@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root>
+  <!-- 菜单类型(1-为树型菜单,2-……) -->
+  <menutype>1</menutype>
+  <!-- 菜单根元素的名称-->
+  <menutree>瘦马科技</menutree>
+  <!-- 菜单上传文件的路径-->
+  <menuurl>UpLoadFile/Menus</menuurl>
+</root>

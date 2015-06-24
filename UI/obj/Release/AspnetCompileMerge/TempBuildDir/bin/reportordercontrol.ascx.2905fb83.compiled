@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/WebControls/ReportOrderControl.ascx" hash="52e4a8c81" filehash="ed0c60cdafb" flags="110000" assembly="SoMe" type="ASP.webcontrols_reportordercontrol_ascx">
+  <filedeps>
+    <filedep name="/WebControls/ReportOrderControl.ascx" />
+  </filedeps>
+</preserve>

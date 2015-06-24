@@ -1,0 +1,24 @@
+a, a:visited
+{
+	color: #223399;
+	text-decoration: none;
+}
+A:hover	{text-decoration: underline; color: #ff5555;}
+
+body{
+	margin:				0px;
+	border: solid 1px;
+	margin-left: 0px;
+	border-color: #999999;
+	background-color:	#dbccac;
+	font-size:			12px;
+	font-family:		Arial,ËÎÌו,Arial,Sans-serif;
+	line-height:		18px;
+}
+
+.ttTable{
+	color: #403020;
+	font-size: 12px;
+	font-weight: bold;
+	line-height:20px;
+}

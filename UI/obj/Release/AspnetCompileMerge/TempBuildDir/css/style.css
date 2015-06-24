@@ -1,0 +1,77 @@
+/*	全局定义　*/
+body,td,div,p
+{
+    color:#1A438E;font:normal 12px/20px Tahoma,Verdana,sans-serif;
+}
+    
+p{margin:0px; padding:0px;}
+body{background:#6591BE; margin:0px 0px; padding:0px;}
+html
+{SCROLLBAR-FACE-COLOR: #72a3d0; SCROLLBAR-HIGHLIGHT-COLOR: #337abb; SCROLLBAR-SHADOW-COLOR: #337abb; SCROLLBAR-3DLIGHT-COLOR: #337abb; SCROLLBAR-ARROW-COLOR: #ffffff; SCROLLBAR-TRACK-COLOR: #337ec0; SCROLLBAR-DARKSHADOW-COLOR: #337abb
+	}
+
+ul{padding-left:10px; margin-left:10px; padding-bottom:0px; margin-bottom:0px;}
+.submitMiniGreen {
+	BORDER-RIGHT: #ffffff 1px solid; PADDING-RIGHT: 5px; BORDER-TOP: #ffffff 1px solid; PADDING-LEFT: 5px; FONT-WEIGHT: bold; FONT-SIZE: 14px; BACKGROUND: url(../images/submitbg.gif) #83bbd9 repeat-x; PADDING-BOTTOM: 0px; BORDER-LEFT: #ffffff 1px solid; CURSOR: pointer; COLOR: #1e5494; PADDING-TOP: 0px; BORDER-BOTTOM: #ffffff 1px solid; HEIGHT: 25px
+	
+}
+.submitMiniGreenOver {
+	BORDER-RIGHT: #ffffff 1px solid; PADDING-RIGHT: 5px; BORDER-TOP: #ffffff 1px solid; PADDING-LEFT: 5px; FONT-WEIGHT: bold; FONT-SIZE: 14px; BACKGROUND: url(../images/submitBgOver.gif) #83bbd9 repeat-x; PADDING-BOTTOM: 0px; BORDER-LEFT: #ffffff 1px solid; CURSOR: pointer; COLOR: #ff6600; PADDING-TOP: 0px; BORDER-BOTTOM: #ffffff 1px solid; HEIGHT: 25px
+}
+
+input,textarea,hr{height:20px;color:navy;font:normal 12px/120% Verdana,sans-serif;padding-left:2px;padding-top:3px;padding-right:2px;border:1px #8AB3DB solid;}
+.otherinput{color:navy;font:normal 12px/120% Verdana,sans-serif;padding-left:2px;padding-right:2px;border:1px #8AB3DB solid;}
+.noinput input{border:none;}
+td{border-color:#C9DBEF;}
+a{color:#1A438E;text-decoration:none;}
+a:hover{color:#000000;text-decoration:none;}
+.B
+{
+	text-align:center;
+	color:#ffffff;
+	}
+.topbg
+{
+	background:#3890B5;
+	padding-left:10px;
+	}
+	.topbg2
+{
+	background:#72A0D2;
+	padding-left:10px;
+	}
+form {margin:0px;}
+.grid{border:1px #B3CDE8 solid;border-collapse:collapse;}
+.nogrid{border:0px !important;}
+.fixed{table-layout:fixed;overflow:hidden;}
+/*	最外层表格 */
+.toptable{width:100%;background:#EEF7FD;}
+/*	列表头部的列名称栏 */
+.category{color:#003373;font-weight:bold; background:#FFFFFF;}
+/*	高亮背景 */
+.highlight{background:#E8F2FD;}
+/*	radio和checkbox样式 */
+.smallbox{height:14px !important;height:16px;border:0px !important;vertical-align: middle;}
+/*	手形光标 */
+.hand{cursor:hand;background:url(../images/menu_2.gif) no-repeat; width:176px; height:33px;padding-top:2px; text-align:center;}
+/*	按钮样式 */
+.button	{font:normal 12px/120% Verdana,'宋体';height:18px;
+border-left:0px #ced4e2 solid;
+border-top:0px #ced4e2 solid;
+border-right:0px #888888 solid;
+border-bottom:0px #888888 solid;
+background:	#ffffff;}
+/*	提示文本颜色  */
+.t1	{color:#ff6600;}
+/*	醒目文本颜色  */
+.t2	{color:red;}
+/*	灰调文本颜色  */
+.t3	{color:gray;}
+/*	黑色文本颜色  */
+.t4	{color:#000000;}
+/*	小字体 */
+.small{font:normal 12px/180% Verdana,'宋体';}
+br{font:normal 12px/5px Verdana,'宋体';}
+.style3{
+background:	#ffffff;
+}

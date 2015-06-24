@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/System/Dictionary/BusinessTache/BusinessMessList.aspx" hash="52e4a8c81" filehash="338392b2c5c71276" flags="110000" assembly="SoMe" type="ASP.system_dictionary_businesstache_businessmesslist_aspx">
+  <filedeps>
+    <filedep name="/Master/One.master" />
+    <filedep name="/System/Dictionary/BusinessTache/BusinessMessList.aspx" />
+    <filedep name="/WebControls/Buttons1.ascx" />
+    <filedep name="/WebControls/PageNavigator.ascx" />
+    <filedep name="/WebControls/WebOrderControl.ascx" />
+  </filedeps>
+</preserve>

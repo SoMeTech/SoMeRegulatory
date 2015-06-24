@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/Work/BZ/BtFFMx.aspx" hash="52e4a8c81" filehash="b6832c51a10bef03" flags="110000" assembly="SoMe" type="ASP.work_bz_btffmx_aspx">
+  <filedeps>
+    <filedep name="/Master/MainMX.master" />
+    <filedep name="/WebControls/Buttons1.ascx" />
+    <filedep name="/Work/BZ/BtFFMx.aspx" />
+  </filedeps>
+</preserve>

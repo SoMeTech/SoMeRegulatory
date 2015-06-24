@@ -1,0 +1,38 @@
+
+时间：2015-06-15 23:20:45。类：ASP.master_one_master，方法：getPageSize()，信息：ORA-12154: TNS: 无法解析指定的连接标识符
+。
+
+
+时间：2015-06-15 23:21:52。类：ASP.master_one_master，方法：getPageSize()，信息：ORA-12154: TNS: 无法解析指定的连接标识符
+。
+
+
+时间：2015-06-15 23:31:14。类：ASP.work_jczlwh_gnfl_aspx，方法：ShowData()，信息：ORA-00923: 未找到要求的 FROM 关键字
+ORA-06512: 在 "ZJJG.GETDATASETBYNUM", line 31
+ORA-06512: 在 line 1
+。
+
+
+时间：2015-06-15 23:32:06。类：ASP.work_jczlwh_gnfl_aspx，方法：ShowData()，信息：ORA-00923: 未找到要求的 FROM 关键字
+ORA-06512: 在 "ZJJG.GETDATASETBYNUM", line 31
+ORA-06512: 在 line 1
+。
+
+
+时间：2015-06-15 23:35:06。类：ASP.work_jczlwh_gnfl_aspx，方法：ShowData()，信息：ORA-00923: 未找到要求的 FROM 关键字
+ORA-06512: 在 "ZJJG.GETDATASETBYNUM", line 31
+ORA-06512: 在 line 1
+。
+
+
+时间：2015-06-15 23:37:28。类：ASP.work_jczlwh_gnfl_aspx，方法：ShowData()，信息：ORA-00923: 未找到要求的 FROM 关键字
+ORA-06512: 在 "ZJJG.GETDATASETBYNUM", line 31
+ORA-06512: 在 line 1
+。
+
+
+时间：2015-06-15 23:58:28。类：ASP.work_jczlwh_gnfl_aspx，方法：ShowData()，信息：ORA-00923: 未找到要求的 FROM 关键字
+ORA-06512: 在 "ZJJG.GETDATASET", line 35
+ORA-06512: 在 line 1
+。
+

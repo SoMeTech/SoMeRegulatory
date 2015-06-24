@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/Work/Back/messbackoperinput.aspx" hash="52e4a8c81" filehash="e0cb41656951a0bd" flags="110000" assembly="SoMe" type="ASP.work_back_messbackoperinput_aspx">
+  <filedeps>
+    <filedep name="/WebControls/reprotButtonl.ascx" />
+    <filedep name="/Work/Back/messbackoperinput.aspx" />
+  </filedeps>
+</preserve>

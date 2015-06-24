@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/GetInfo.aspx" hash="52e4a8c81" filehash="460b1e97c259" flags="110000" assembly="SoMe" type="ASP.getinfo_aspx">
+  <filedeps>
+    <filedep name="/GetInfo.aspx" />
+  </filedeps>
+</preserve>

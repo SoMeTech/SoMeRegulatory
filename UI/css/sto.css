@@ -1,0 +1,42 @@
+<style type="text/css">
+.AAAA
+{
+}
+
+.PublicCSS
+{
+ 	body{overflow-x:hidden;overflow-y:auto;}
+ 	table{font-size:12px;}
+}
+
+.CurTab
+{
+	font-size:11pt;
+	font-weight:bold;
+	color:white;
+	background-color:#a87040;
+	border:1px solid black
+}
+
+.WaitTab
+{
+	font-size:11pt;
+	color:white;
+	background-color:#c89060;
+	cursor:hand
+}
+
+.head{
+	color: #000000;
+	font-size:12pt;
+	font-weight: bold;
+	line-height:20px;
+}
+
+.blank{
+	font-size:11pt;
+	border: none;
+	border-bottom: 1px solid #a0a0a0;
+	background-color:transparent;
+}
+</style>

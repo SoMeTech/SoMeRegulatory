@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/Work/ZJBF/ZJBFOper.aspx" hash="52e4a8c81" filehash="588433dee221ad30" flags="110000" assembly="SoMe" type="ASP.work_zjbf_zjbfoper_aspx">
+  <filedeps>
+    <filedep name="/Master/MainAddUpdate.master" />
+    <filedep name="/WebControls/Buttons1.ascx" />
+    <filedep name="/Work/ZJBF/ZJBFOper.aspx" />
+  </filedeps>
+</preserve>

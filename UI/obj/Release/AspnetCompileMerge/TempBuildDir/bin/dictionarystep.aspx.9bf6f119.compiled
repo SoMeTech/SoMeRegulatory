@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/System/Dictionary/DictionaryStep.aspx" hash="52e4a8c81" filehash="4cc6ea280a2be1b2" flags="110000" assembly="SoMe" type="ASP.system_dictionary_dictionarystep_aspx">
+  <filedeps>
+    <filedep name="/Master/One.master" />
+    <filedep name="/System/Dictionary/DictionaryStep.aspx" />
+    <filedep name="/WebControls/Buttons1.ascx" />
+    <filedep name="/WebControls/PageNavigator.ascx" />
+    <filedep name="/WebControls/WebOrderControl.ascx" />
+  </filedeps>
+</preserve>

@@ -1,0 +1,42 @@
+﻿@charset "utf-8";
+body {font-family: Arial, Helvetica, sans-serif;font-size: 12px; color:#333; margin:0; padding:0; background-color:#FFFFFF; line-height:160%;}
+IMG { border:0;}
+.clear { clear:both;}
+
+a:link { color: #333; text-decoration:none;}
+a:visited { color:#333; text-decoration:none;}
+a:hover { color:#F00; text-decoration: underline;}
+
+a.l_bai:link { color:#FFFFFF; text-decoration:none;}
+a.l_bai:visited { color:#FFFFFF; text-decoration:none;}
+a.l_bai:hover { color:#FFFFFF; text-decoration: underline;}
+
+a.l_red:link { color: #F00; text-decoration:none;}
+a.l_red:visited { color:#F00; text-decoration:none;}
+a.l_red:hover { color: #C00; text-decoration: underline;}
+
+a.l_red02:link { color: #F00; text-decoration:underline;}
+a.l_red02:visited { color:#F00; text-decoration:underline;}
+a.l_red02:hover { color: #C00; text-decoration: underline;}
+
+.f_bai { color:#FFF;}
+.f_blue { color:#01375f;}
+.f_red { color:#F00;}
+
+/*login*/
+.login_bodybg { background-color:#e4e4e4;}
+.loginbox {width:637px; height:392px; margin:100px auto 0 auto; background-image:url('../images/img/login_bg_03.jpg'); background-repeat:no-repeat; background-position:top;}
+.login_input { width:200px; line-height:normal; border:1px solid #FFF; background-color:#FFF; font-size:12px; color:#666; font-weight:normal;}
+
+/*content*/
+.content_box { border:1px solid #0266b0; background-color:#FFF;}
+.header_box { width:100%; height:65px; background-image:url('../images/img/header_bg.jpg'); background-repeat:repeat-x; background-position:top;}
+.header_a { background-image:url('../images/img/header_a.jpg'); background-repeat:no-repeat; background-position:left top;}
+.header_b { background-image:url('../images/img/header_b.jpg'); background-repeat:no-repeat; background-position:right top;}
+.header_c { height:30px; background-image:url('../images/img/header_c.jpg'); background-repeat: repeat-x; background-position:top; border-bottom:1px solid #a7c6ee;}
+
+
+
+/*footer*/
+.footer_box {width:100%; height:30px; line-height:30px; margin-top:5px; border-top:1px solid #a7c6ee; background-image:url('../images/img/footer_a.jpg'); background-repeat:repeat-x; background-position:left top;}
+.footer_a {background-image:url('../images/img/footer_c.jpg'); background-repeat: no-repeat; background-position:right top;}

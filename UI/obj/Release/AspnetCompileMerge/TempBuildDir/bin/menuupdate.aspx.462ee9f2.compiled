@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/System/Menu/MenuUpdate.aspx" hash="52e4a8c81" filehash="b3730704684d459f" flags="110000" assembly="SoMe" type="ASP.system_menu_menuupdate_aspx">
+  <filedeps>
+    <filedep name="/Master/MainAddUpdate.master" />
+    <filedep name="/System/Menu/MenuUpdate.aspx" />
+    <filedep name="/System/WebControls/Menu_ImageLoad.ascx" />
+    <filedep name="/WebControls/Buttons1.ascx" />
+  </filedeps>
+</preserve>

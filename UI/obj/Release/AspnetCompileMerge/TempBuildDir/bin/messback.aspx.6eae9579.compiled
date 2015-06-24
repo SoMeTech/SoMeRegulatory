@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/Work/Back/messback.aspx" hash="52e4a8c81" filehash="499cc549fdb412f5" flags="110000" assembly="SoMe" type="ASP.work_back_messback_aspx">
+  <filedeps>
+    <filedep name="/Master/One.master" />
+    <filedep name="/WebControls/Buttons1.ascx" />
+    <filedep name="/WebControls/PageNavigator.ascx" />
+    <filedep name="/WebControls/WebOrderControl.ascx" />
+    <filedep name="/Work/Back/messback.aspx" />
+  </filedeps>
+</preserve>

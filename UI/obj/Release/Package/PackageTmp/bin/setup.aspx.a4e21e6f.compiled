@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/GlobalSet/setup.aspx" hash="52e4a8c81" filehash="58c752b27f1414f0" flags="110000" assembly="SoMe" type="ASP.globalset_setup_aspx">
+  <filedeps>
+    <filedep name="/GlobalSet/setup.aspx" />
+    <filedep name="/Master/MainAddUpdate.master" />
+    <filedep name="/WebControls/Buttons1.ascx" />
+  </filedeps>
+</preserve>

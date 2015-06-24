@@ -1,0 +1,183 @@
+﻿using SoMeTech.YZXWPageClass;
+using System;
+using System.Data;
+using System.Web.SessionState;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+using YYControls;
+using SoMeTech.DataAccess;
+using QxRoom.Common.ControlDo;
+using System.Web;
+using SoMeTech.User;
+using System.Web.UI.HtmlControls;
+using SoMeTech.CommonDll;
+public partial class Work_JCZLWH_gnfl : Page, IRequiresSessionState
+{
+    protected SmartGridView gvResult;
+    private ExceptionLog.ExceptionLog el;
+    private DB_OPT dbo;
+    public string count = "0";
+    public int pageind = 1;
+    protected HtmlInputHidden txtindex;
+    protected HtmlInputHidden txttitle;
+    protected void Page_Load(object sender, EventArgs e)
+    {
+        if (this.Session["user"] != null)
+        {
+            if (base.Request["strTitle"] != null)
+            {
+                this.txttitle.Value = base.Server.UrlDecode(base.Request["strTitle"].ToString().Trim());
+            }
+            this.Master.strTitle = this.txttitle.Value;
+            this.Master.ButtonsPushDown = new ButtonsHandler(this.Buttons);
+            this.Master.gvGridView = this.gvResult;
+            if (!this.Page.IsPostBack)
+            {
+                string userName = ((UserModel)this.Session["User"]).UserName;
+                string power = ((UserModel)this.Session["User"]).Power;
+                string companyPower = ((UserModel)this.Session["User"]).CompanyPower;
+                try
+                {
+                    ButtonsModel model = null;
+                    PublicDal.ShowListButton(this.Page, out model, "");
+                    model.IbtDoText = "查看";
+                    model.IfPrintNote = true;
+                    model.IbtPrintNoteText = "打印";
+                    this.Master.btModel = model;
+                    this.ShowData("");
+                }
+                catch (Exception exception)
+                {
+                    this.el = new ExceptionLog.ExceptionLog();
+                    this.el.ErrClassName = base.GetType().ToString();
+                    this.el.ErrMessage = exception.Message.ToString();
+                    this.el.ErrMethod = "bind()";
+                    this.el.WriteExceptionLog(true);
+                    Const.OpenErrorPage("获取数据失败，请联系管理员！", this.Page);
+                }
+            }
+        }
+        else
+        {
+            Const.GoLoginPath_List(this.Page);
+        }
+    }
+    public void Buttons(string ibtid)
+    {
+        int selectedIndex = this.gvResult.SelectedIndex;
+        switch (ibtid)
+        {        
+            case "ibtcontrol_ibtlook":
+            case "ibtcontrol_ibtsearch":
+            case "ibtcontrol_ibthuizong":
+            case "ibtcontrol_ibtputout":
+            case "ibtcontrol_ibtset":
+            case "ibtcontrol_ibtexit":
+                break;
+
+            case "ibtcontrol_ibtrefresh":
+                if (this.Master.PageIndex > 1)
+                {
+                    this.pageind = this.Master.PageIndex;
+                }
+                this.ShowData(this.Master.StrSelect);
+                break;
+
+            default:
+                return;
+        }
+    }
+    protected void gvResult_Sorting(object sender, GridViewSortEventArgs e)
+    {
+        string sortExpression = e.SortExpression;
+        if ((this.ViewState["SortOrder"] != null) && (this.ViewState["OrderDire"] != null))
+        {
+            if (this.ViewState["SortOrder"].ToString() == sortExpression)
+            {
+                if (this.ViewState["OrderDire"].ToString() == "Desc")
+                {
+                    this.ViewState["OrderDire"] = "ASC";
+                }
+                else
+                {
+                    this.ViewState["OrderDire"] = "Desc";
+                }
+            }
+            else
+            {
+                this.ViewState["SortOrder"] = e.SortExpression;
+                this.ViewState["OrderDire"] = "ASC";
+            }
+        }
+        else
+        {
+            this.ViewState["SortOrder"] = e.SortExpression;
+            this.ViewState["OrderDire"] = "ASC";
+        }
+        this.ShowData(this.Master.StrSelect);
+    }
+    public void ShowData(string str)
+    {
+        try
+        {
+            string year = HttpContext.Current.Request.Cookies["YearND"].Value.ToString();
+            this.dbo = new DB_OPT();
+            this.dbo.Open();
+            if (str != "")
+            {
+                str = " where lbdm=4 and substr(fzdm,1,1)='2' and gsdm='" + year + "'" + str + " ";
+            }
+            DataSet set = PageUsuClass.GetPageSizeData(GetColsName(), "GL_FZXZL", str, "FZDM", " order by FZDM ", this.Master.PageIndex, this.Master.PageSize, out this.count);
+            this.Master.RecordCount = Convert.ToInt32(this.count);
+            if ((set != null) && (set.Tables[0].Rows.Count > 0))
+            {
+                DataView defaultView = set.Tables[0].DefaultView;
+                defaultView.Sort = DataListDo.GetViewSort();
+                this.gvResult.DataSource = defaultView;
+                this.gvResult.DataBind();
+            }
+            else
+            {
+                DataTable table = new DataTable();
+                table = set.Tables[0];
+                DataRow row = table.NewRow();
+                table.Rows.Add(row);
+                this.gvResult.DataSource = table.DefaultView;
+                this.gvResult.DataBind();
+            }
+        }
+        catch (Exception exception)
+        {
+            this.el = new ExceptionLog.ExceptionLog();
+            this.el.ErrClassName = base.GetType().ToString();
+            this.el.ErrMessage = exception.Message.ToString();
+            this.el.ErrMethod = "ShowData()";
+            this.el.WriteExceptionLog(true);
+            PageShowText.OpenErrorPage("获取数据失败，请联系系统管理员！", this.Page);
+        }
+        finally
+        {
+            if (this.dbo != null)
+            {
+                this.dbo.Close();
+            }
+        }
+    }
+
+    public static string GetColsName()
+    {
+        return "fzdm,(length(trim(fzdm))-1)/2 LEVEL,(case when length(trim(fzdm))>3 then substr(fzdm,1,length(trim(fzdm))-2) else '0' end ) PID,FZDM||-||fzmc FZMC";
+    }
+    public MainOne Master
+    {
+        get
+        {
+            return (MainOne)base.Master;
+        }
+    }
+    protected void gvResult_RowCommand(object sender, GridViewCommandEventArgs e)
+    {
+        
+        
+    }
+}

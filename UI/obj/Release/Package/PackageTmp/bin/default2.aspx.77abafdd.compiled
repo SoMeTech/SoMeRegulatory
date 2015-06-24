@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/System/OrgStruct/Company/Default2.aspx" hash="52e4a8c81" filehash="2868d99e0db7" flags="110000" assembly="SoMe" type="ASP.system_orgstruct_company_default2_aspx">
+  <filedeps>
+    <filedep name="/System/OrgStruct/Company/Default2.aspx" />
+  </filedeps>
+</preserve>

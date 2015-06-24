@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="2" virtualPath="/FileUploadService.asmx" hash="280d0c19" filehash="1eccc0b490c3" flags="130000" assembly="RegulatoryBin" type="FileUploadService">
+  <filedeps>
+    <filedep name="/FileUploadService.asmx" />
+  </filedeps>
+</preserve>

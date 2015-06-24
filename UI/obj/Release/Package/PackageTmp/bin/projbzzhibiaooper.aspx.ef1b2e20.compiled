@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/Work/BZ/projBzZhiBiaoOper.aspx" hash="52e4a8c81" filehash="4683c87a4c676475" flags="110000" assembly="SoMe" type="ASP.work_bz_projbzzhibiaooper_aspx">
+  <filedeps>
+    <filedep name="/Master/MainMX.master" />
+    <filedep name="/WebControls/Buttons1.ascx" />
+    <filedep name="/WebControls/UserControl/FilePostCtr.ascx" />
+    <filedep name="/Work/BZ/projBzZhiBiaoOper.aspx" />
+  </filedeps>
+</preserve>

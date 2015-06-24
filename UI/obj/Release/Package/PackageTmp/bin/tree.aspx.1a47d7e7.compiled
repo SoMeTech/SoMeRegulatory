@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/jquery.easyui/tree.aspx" hash="52e4a8c81" filehash="31418bdf0585" flags="110000" assembly="SoMe" type="ASP.jquery_easyui_tree_aspx">
+  <filedeps>
+    <filedep name="/jquery.easyui/tree.aspx" />
+  </filedeps>
+</preserve>

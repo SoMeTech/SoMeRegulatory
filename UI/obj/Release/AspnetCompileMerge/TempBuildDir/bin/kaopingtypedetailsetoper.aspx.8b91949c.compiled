@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/Work/KaoPing/KaoPingTypeDetailSetOper.aspx" hash="52e4a8c81" filehash="a77bbb047e0ba5c3" flags="110000" assembly="SoMe" type="ASP.work_kaoping_kaopingtypedetailsetoper_aspx">
+  <filedeps>
+    <filedep name="/Master/MainAddUpdate.master" />
+    <filedep name="/WebControls/Buttons1.ascx" />
+    <filedep name="/Work/KaoPing/KaoPingTypeDetailSetOper.aspx" />
+  </filedeps>
+</preserve>

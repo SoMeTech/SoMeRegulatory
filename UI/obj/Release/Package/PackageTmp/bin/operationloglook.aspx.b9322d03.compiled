@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/GlobalSet/Operation/OperationLogLook.aspx" hash="52e4a8c81" filehash="8b0b8db334f0759" flags="110000" assembly="SoMe" type="ASP.globalset_operation_operationloglook_aspx">
+  <filedeps>
+    <filedep name="/GlobalSet/Operation/OperationLogLook.aspx" />
+    <filedep name="/Master/MainAddUpdate.master" />
+    <filedep name="/WebControls/Buttons1.ascx" />
+  </filedeps>
+</preserve>

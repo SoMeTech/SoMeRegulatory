@@ -1,0 +1,30 @@
+a, a:visited
+{
+	color: #ffffff;
+	text-decoration: none;
+}
+A:hover	{text-decoration: underline; color: #ff5555;}
+
+body
+{
+	border-right: #999999 1px solid;
+	padding-right: 2px;
+	border-top: #999999 1px solid;
+	padding-left: 2px;
+	font-size: 12px;
+	margin: 0px;
+	border-left: #999999 1px solid;
+	line-height: 20px;
+	border-bottom: #999999 1px solid;
+	font-family: Arial,ËÎÌו,Arial,Sans-serif;
+	
+}
+
+.tbcolor
+{
+	padding-right: 3px;
+	padding-left: 3px;
+	font-size: 12px;
+	line-height: 20px;
+	background-color: #996633;
+}

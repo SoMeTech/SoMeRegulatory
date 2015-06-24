@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/Work/ZJBF/ZJBFList.aspx" hash="52e4a8c81" filehash="499c8cbd381f24c1" flags="110000" assembly="SoMe" type="ASP.work_zjbf_zjbflist_aspx">
+  <filedeps>
+    <filedep name="/Master/One.master" />
+    <filedep name="/WebControls/Buttons1.ascx" />
+    <filedep name="/WebControls/PageNavigator.ascx" />
+    <filedep name="/WebControls/WebOrderControl.ascx" />
+    <filedep name="/Work/ZJBF/ZJBFList.aspx" />
+  </filedeps>
+</preserve>

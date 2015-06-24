@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/System/OrgStruct/Branch/BranchList.aspx" hash="52e4a8c81" filehash="28ea2797e17ab59f" flags="110000" assembly="SoMe" type="ASP.system_orgstruct_branch_branchlist_aspx">
+  <filedeps>
+    <filedep name="/Master/TwoO.master" />
+    <filedep name="/System/OrgStruct/Branch/BranchList.aspx" />
+    <filedep name="/WebControls/Buttons1.ascx" />
+    <filedep name="/WebControls/PageNavigator.ascx" />
+    <filedep name="/WebControls/WebOrderControl.ascx" />
+  </filedeps>
+</preserve>

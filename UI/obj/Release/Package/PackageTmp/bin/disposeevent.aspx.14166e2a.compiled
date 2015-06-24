@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/Shared/DiagList/DisposeEvent.aspx" hash="52e4a8c81" filehash="ffffc181620d84a8" flags="110000" assembly="SoMe" type="ASP.shared_diaglist_disposeevent_aspx">
+  <filedeps>
+    <filedep name="/Shared/DiagList/DisposeEvent.aspx" />
+  </filedeps>
+</preserve>

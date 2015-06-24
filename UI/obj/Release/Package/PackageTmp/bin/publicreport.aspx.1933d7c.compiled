@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/Report/PublicReport.aspx" hash="52e4a8c81" filehash="fbc575d94219d459" flags="110000" assembly="SoMe" type="ASP.report_publicreport_aspx">
+  <filedeps>
+    <filedep name="/Master/Report.master" />
+    <filedep name="/Report/PublicReport.aspx" />
+    <filedep name="/WebControls/ReportOrderControl.ascx" />
+    <filedep name="/WebControls/reprotButtonlTwo.ascx" />
+  </filedeps>
+</preserve>

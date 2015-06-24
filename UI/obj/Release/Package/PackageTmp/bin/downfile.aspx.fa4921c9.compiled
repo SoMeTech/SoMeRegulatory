@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/WebControls/UserControl/DownFile.aspx" hash="52e4a8c81" filehash="ffffc35a2df63c0c" flags="110000" assembly="SoMe" type="ASP.webcontrols_usercontrol_downfile_aspx">
+  <filedeps>
+    <filedep name="/WebControls/UserControl/DownFile.aspx" />
+  </filedeps>
+</preserve>

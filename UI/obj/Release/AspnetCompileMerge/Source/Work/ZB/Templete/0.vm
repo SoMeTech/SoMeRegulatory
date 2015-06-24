@@ -1,0 +1,42 @@
+<script language="javascript">
+  function printPrieview() {
+  var rd=Math.random();
+  window.location="ZPRINT.aspx?rd="+rd+"&yl="+document.getElementById("Select1").value+"&pk=${DataPK}";
+  }
+  #if(${PrintTxt}!="")
+    alert("${PrintTxt}");
+    #if(${isHasBaby}=="0")
+      window.focus();
+      window.open('', '_self');
+      window.opener = null;
+      window.close();
+    #end
+  #end
+</script>
+<div style="text-align:center">
+<table  class="NOPRINT" algin="center">
+  <tr>
+    <td colspan="2" style=" text-align:left">
+      <button onclick ='printPrieview()' title='打印预览...' >打印预览</button>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      选择打印模板：
+    </td>
+    <td>
+      <select id="Select1"  style="width:200px">
+        #if(${IsJGBM}=="1")
+        <option value="1">股室告知乡财</option>
+        <option value="2">乡财告知乡镇</option>
+        #elseif(${isHasBaby}!="0")
+        <option value="1">股室告知乡财</option>
+        #else
+        <option value="2">乡财告知乡镇</option>
+        <option value="3">乡镇回执乡财</option>
+        #end
+      </select>
+    </td>
+  </tr>  
+</table>
+</div>

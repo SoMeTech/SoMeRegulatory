@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/Work/PublicReportWH/PublicReportWHMx.aspx" hash="52e4a8c81" filehash="cec4262eb96dc2f8" flags="110000" assembly="SoMe" type="ASP.work_publicreportwh_publicreportwhmx_aspx">
+  <filedeps>
+    <filedep name="/Master/MainAddUpdate.master" />
+    <filedep name="/WebControls/Buttons1.ascx" />
+    <filedep name="/WebControls/UserControl/FilePostCtr.ascx" />
+    <filedep name="/Work/PublicReportWH/PublicReportWHMx.aspx" />
+  </filedeps>
+</preserve>

@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/Shared/DiagList/XzSelect.aspx" hash="52e4a8c81" filehash="96ed5940b29" flags="110000" assembly="SoMe" type="ASP.shared_diaglist_xzselect_aspx">
+  <filedeps>
+    <filedep name="/Shared/DiagList/XzSelect.aspx" />
+  </filedeps>
+</preserve>

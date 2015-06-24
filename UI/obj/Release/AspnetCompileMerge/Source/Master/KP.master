@@ -1,0 +1,189 @@
+﻿<%@ master language="C#" autoeventwireup="true" inherits="KP_Master" CodeBehind="KP.master.cs" %>
+
+<%@ Register Src="~/WebControls/Buttons1.ascx" TagName="Buttons1" TagPrefix="uc1" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title id="lbtitle" runat="server">无标题页</title>
+    <base target="_self" />
+    <style type="text/css">
+        .Freezing
+        {
+            position: relative;
+            table-layout: fixed;
+            top: expression(this.offsetParent.scrollTop);
+            z-index: 10;
+        }
+        .Freezing th
+        {
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
+            padding: 2px;
+        }
+       .BackBar
+        {
+            background-image: url(/images/new/backBar.png);
+        }
+        .inputText
+        {
+            border: 1px solid #999999;
+        }
+        .label
+        {
+            border: 1px solid #999999;
+        }
+        .noneDisplay
+        {
+            display: none;
+        }
+		 .mouthType
+        {
+        	cursor:hand; padding:3px 5px 0px 5px; background-color:#0F7CBF; color:#FFF; line-height:normal;
+        }
+		.inputs{ border-bottom-color:Gray; border-left-color:Gray;}
+		.page_input {border:1px solid #CCCCCC; padding:0 2px; background-color:#FFFFFF; }
+		.page_img { margin-bottom:-4px;}
+   
+    </style>
+</head>
+<body id="Body1" style="background-color: #FFFFFF;" runat="server">
+    
+    <script src="<%=QxRoom.Common.Public.RelativelyPath("jss/PageMethods.js") %>"type="text/javascript"></script>
+
+    <script src="/Ext/adapter/ext/ext-base.js" type="text/javascript"></script>
+    <script src="/Ext/ext-all.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+
+        function getServerMess_callback(res) {
+            alert(res.value);
+        }
+
+        function PageSubmit(val) {
+
+            windowFull();
+
+            if (val == "ibtcontrol_ibtadd") {
+                //IsDo("删除");
+                if (!confirm("您确定要新增吗？"))
+                    return false;
+            }
+
+            if (val == "ibtcontrol_ibtupdate") {
+                //IsDo("删除");
+                if (!confirm("您确定要修改吗？"))
+                    return false;
+            }
+
+            if (val == "ibtcontrol_ibtsave") {
+                //IsDo("删除");
+                if (!confirm("您确定要保存吗？"))
+                    return false;
+            }
+
+            if (val == "ibtcontrol_ibtrefresh") {
+                window.location.reload();
+            }
+
+            if (val == "ibtcontrol_ibtimpower") {
+                //IsDo("授权");
+                if (!confirm("您确定要给该职员授权吗？"))
+                    return false;
+            }
+
+            if (val == "ibtcontrol_ibtsetback") {
+                //IsDo("回审");
+                if (!confirm("您确定要将该笔数据回审吗？"))
+                    return false;
+            }
+
+            if (val == "ibtcontrol_ibtrollback") {
+                //IsDo("驳回");
+                if (!confirm("您确定要将该笔数据驳回吗？"))
+                    return false;
+            }
+
+            if (val == "ibtcontrol_ibtdelete") {
+                //IsDo("删除");
+                if (!confirm("您确定要删除该笔数据吗？"))
+                    return false;
+            }
+
+            if (val == "ibtcontrol_ibtaudit") {
+                //IsDo("审核");
+                if (!confirm("您确定要执行该项操作吗？"))
+                    return false;
+            }
+
+            if (val == "ibtcontrol_ibtapply") {
+                //IsDo("审批");
+                if (!confirm("您确定要执行该项操作吗？"))
+                    return false;
+            }
+
+            if (val == "ibtcontrol_ibthuizong") {
+                //IsDo("审批");
+                if (!confirm("您确定要执行该项操作吗？"))
+                    return false;
+            }
+
+            if (val == "ibtcontrol_ibtexit") {
+                try {
+                    window.parent.IsCloseTab();
+                } catch (e) { window.close(); }
+            }
+
+            //该按钮事件专门为 Excel 模板打印设置，没有该功能的话请勿将该按钮设置成显示状态，不然会报脚本错误
+            //如果客户愿意使用 Excel 自带的打印按钮则屏蔽该事件
+            //if (val == "ibtcontrol_ibtexcelprint") {
+            //    print();
+            //}
+
+            document.all('<%=ibtid.ClientID %>').value = val;
+        }
+    </script>
+
+    <form id="form1" runat="server">
+    <asp:ScriptManager ID="ScriptManager1" runat="server">
+        <Scripts>
+            <asp:ScriptReference ScriptMode="Auto" Path="~/jss/GridViewChangeColor.js" />
+            <asp:ScriptReference ScriptMode="Auto" Path="~/jss/Qx_nz.js" />
+         <%--<asp:ScriptReference ScriptMode="Auto" Path="~/jss/ReadyReload.js" />--%>
+        </Scripts>
+    </asp:ScriptManager>
+    <div>
+        <asp:UpdatePanel ID="UpdatePanel1" runat="server">
+            <ContentTemplate>
+            <input type="hidden" id="txtBusinessDate" runat="server" />
+                <table cellspacing="0" cellpadding="0" border="0" width="100%" style="overflow:scroll;">
+                    <tr>
+                        <td>
+                            <table width="100%" cellspacing="0" cellpadding="0" border="0">
+                                <tr>
+                                    <td id="td2" runat="server" height="49" align="left" style="border-bottom: #314671 1px solid;
+                                        border-right: #314671 1px solid; background-image: url(../images/new/backBar2.png);">
+                                        <uc1:Buttons1 ID="Buttons1_1" runat="server" />
+                                        <input type="hidden" id="ibtid" name="ibtid" runat="server" />
+                                     <img src="" width="150" runat="server" id="titlePic" visible="false" />
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="border" style="width: 100%;">
+                            <asp:Panel ID="Panel1" runat="server"  Width="100%">
+                                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                                </asp:ContentPlaceHolder>
+                            </asp:Panel>
+                        </td>
+                    </tr>
+                </table>
+            </ContentTemplate>
+        </asp:UpdatePanel>
+    </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,304 @@
+body 
+{
+	FONT-SIZE: 9pt;	
+	OVERFLOW:auto;
+	BACKGROUND-IMAGE: url(../images/last/bj.jpg);
+	margin:0px 0px 0px 0px;
+	background-position:right bottom;
+	background-repeat:repeat;
+	background-attachment: fixed;		
+	background:#ffffff;
+}
+td {
+	font-size: 12px; color: #000000;
+}
+a:link {
+	color: #006699; text-decoration: none
+}
+a:visited {
+	color: #006699; text-decoration: none;
+}
+a:active {
+	color: #000000; text-decoration: none; 
+}
+a:hover {
+	left: 1px; color: #ff0000; position: relative; top: 1px; text-decoration: none
+}
+
+a.a1:link {
+	color: #0000ff; text-decoration: none
+}
+a.a1:visited {
+	color: #C306D4; text-decoration: none;
+}
+a.a1:active {
+	color: #0000ff; text-decoration: none; 
+}
+a.a1:hover {
+	left: 1px; color: #ff0000; position: relative; top: 1px; text-decoration: none
+}
+
+input {
+	font-size: 12px;
+	height: 19px;
+	background: #edf1fe;
+	border: 1px solid #6abbea;	
+	word-break:break-all;
+	word-wrap:break-wor;
+}
+
+
+textarea {
+	font-size: 12px;
+	background: #edf1fe;
+	border: 1px solid #6abbea;
+	word-break:break-all;
+	word-wrap:break-word
+}
+
+select {
+	font-size: 12px;
+	height: 19px;
+	background: #edf1fe;
+	border: 1px solid #6abbea;
+}
+
+textbox {
+	font-size: 12px;
+	background: #edf1fe;
+	border: 1px solid #6abbea;
+	word-break:break-all;
+	word-wrap:break-word
+}
+
+.tree {
+	font: 12px "宋体";
+	color: #00053c;
+	background:#ffffff;
+}
+.error
+{
+	color:red;
+	font: 12px "宋体";
+}
+
+.select_must
+{
+	color:red;
+	font: 12px "宋体";
+}
+
+.tab_all { 
+	padding-left: 4px;
+	padding-right: 4px;
+	font: 12px "宋体";
+	border-top: 1px solid #6abbea;
+	border-left: 1px solid #6abbea;
+	border-right: none;
+	border-bottom: none;	
+}
+
+.tab_left {
+	padding-left: 8px;
+	font: 12px "宋体";
+	border-top: 1px solid #6abbea;
+	border-left: 1px solid #6abbea;
+	border-right: none;
+	border-bottom: none;	
+}
+
+.tab_unilateral_double {
+	padding-left: 8px;
+	padding-right: 8px;
+	font: 12px "宋体";
+	border-top: none;
+	border-left: 1px solid #6abbea;
+	border-right: 1px solid #6abbea;
+	border-bottom: none;
+	background: #fafbfc;
+}
+
+table.query {
+	font: 12px "宋体";
+	color: #00053c;
+	background: #ffffff;
+	border-right: 1px solid #6abbea;
+	border-bottom: 1px solid #6abbea;
+	border-left: 1px solid #6abbea;
+}
+
+table.border_all {
+	font: 12px "宋体";
+	color: #00053c;
+	background: #ffffff;
+	border-top: 1px solid #6abbea;
+	border-right: 1px solid #6abbea;
+	border-bottom: 1px solid #6abbea;
+	border-left: 1px solid #6abbea;
+}
+
+table.t_all{
+	border-right: 1px solid #6abbea;
+	border-bottom: 1px solid #6abbea;
+}
+table.datagrid
+{	
+	border-top: 1px solid #6abbea;
+	border-left: 1px solid #6abbea;
+	border-right: 1px solid #6abbea;
+	border-bottom: 1px solid #6abbea;
+}
+TABLE.category {
+	PADDING-RIGHT: 2px; PADDING-LEFT: 2px; PADDING-BOTTOM: 2px; WIDTH: 100%; PADDING-TOP: 2px; TEXT-ALIGN: left
+}
+tr.header
+{
+    height: 23px;
+	background-image: url(../images/last/table_tit_bg.gif);
+}
+tr.item
+{
+	height: 23px;
+	background: #ffffff;
+}
+tr.item1
+{
+	height: 23px;
+	background: #fafbfc;
+}
+td.header
+{
+	padding-left: 8px;
+	padding-right: 8px;
+	color: #000000;
+	font: 12px "宋体";
+	border-top: 1px solid #6abbea;
+	border-left: 1px solid #6abbea;
+	border-right: none;
+	border-bottom: none;
+	height: 23px;
+}
+td.item
+{
+	padding-left: 8px;
+	padding-right: 8px;
+	color: #000000;
+	font: 12px "宋体";
+	border-top: 1px solid #6abbea;
+	border-left: 1px solid #6abbea;
+	border-right: none;
+	border-bottom: 1px solid #6abbea;
+}
+td.item2
+{
+	padding-left: 0px;
+	padding-right: 0px;
+	color: #000000;
+	font: 12px "宋体";
+	border-top: 1px solid #6abbea;
+	border-left: 1px solid #6abbea;
+	border-right: none;
+	border-bottom: none;
+}
+
+td.query
+{
+	padding-left: 8px;
+	padding-right: 8px;
+	color: #000000;
+	font: 12px "宋体";
+	height: 23px;
+}
+td.lead
+{
+	padding-left: 8px;
+	padding-right: 8px;
+	padding-top: 8px;
+	padding-bottom: 8px;	
+}
+
+.green {
+	font: bold 12px "宋体";
+	color: #51B402;
+}
+.button_backmain{
+	font-size: 12px;
+	width: 75px;
+	height: 28px;
+	background-image: url(images/head_03.jpg);
+	border: none;
+	cursor: hand;
+}
+
+
+/*按钮样式*/
+.btncss {
+    font-family: "Tahoma", "宋体";
+    font-size: 9pt; color: #003399;
+    border: 1px #003399 solid;
+    color:006699;
+    BORDER-BOTTOM: #93bee2 1px solid; 
+    BORDER-LEFT: #93bee2 1px solid; 
+    BORDER-RIGHT: #93bee2 1px solid; 
+    BORDER-TOP: #93bee2 1px solid;
+    background-image:url(CssImages/bluebuttonbg.gif);
+    background-color: #e8f4ff;
+    CURSOR: hand;
+    font-style: normal ;
+}
+.Newbutton:link {
+	color:Silver;
+	text-decoration: none;
+	font-size: 9pt;
+	font-family: "Tahoma","宋体";	
+}
+
+.Newbutton:visited {
+	color: Silver;
+	text-decoration: none;
+	font-size: 9pt;
+	font-family: "Tahoma","宋体";	
+}
+.Newbutton:active {
+	color: Silver;
+	text-decoration: none;
+	font-size: 9pt;
+	font-family: "Tahoma","宋体";	
+}
+.Newbutton:hover {
+	left: 1px; color: #ff0000; position: relative; top: 1px; text-decoration: none
+}
+
+
+.TreeToPrev {
+	background-image:url(CssImages/Prev.gif);
+	background-repeat:no-repeat;
+	background-position:center center;
+	
+}
+.TreeToNext {
+	background-image:url(CssImages/Next.gif);
+	background-repeat:no-repeat;
+	background-position:center center;
+}
+.TreeToUp {
+	background-image:url(CssImages/Up.gif);
+	background-repeat:no-repeat;
+	background-position:center center;
+}
+.TreeToDown {
+	background-image:url(CssImages/Down.gif);
+	background-repeat:no-repeat;
+	background-position:center center;
+}
+TABLE.category {
+	PADDING-RIGHT: 2px; PADDING-LEFT: 2px; PADDING-BOTTOM: 2px; WIDTH: 100%; PADDING-TOP: 2px; TEXT-ALIGN: left
+}
+table.pagination{
+	border-left: 1px solid #6abbea;	
+	border-right: 1px solid #6abbea;
+	border-bottom: 1px solid #6abbea;
+}
+.navPoint { FONT-SIZE: 9pt; CURSOR: hand; COLOR: white; FONT-FAMILY: Webdings } 
+.m_backmain { BORDER-RIGHT: medium none; BORDER-TOP: medium none; FONT-SIZE: 12px; BACKGROUND-IMAGE: url(../images/BigPage/lo1_r1_c2.jpg); BORDER-LEFT: medium none; WIDTH: 66px; CURSOR: hand; BORDER-BOTTOM: medium none; HEIGHT: 22px } 
+

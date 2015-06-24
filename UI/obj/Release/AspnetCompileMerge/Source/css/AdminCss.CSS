@@ -1,0 +1,320 @@
+/* 网站链接总的css定义:可定义内容为链接字体颜色、样式等 */
+a {text-decoration: none;
+	border-width:0px;
+	} /* 链接无下划线,有为underline */
+a:link {color: #000000;text-decoration: none;} /* 未访问的链接 */
+a:visited {color: #000000;text-decoration: none;} /* 已访问的链接 */
+a:hover {color: #ff6600;text-decoration: none;} /* 鼠标在链接上 */
+a:active {color: #000000;text-decoration: none;} /* 点击激活链接 */
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	background-image: url(../images/yyy.jpg);
+}
+.menutext {
+	font-family: "新宋体";
+	font-size: 12px;
+	font-style: normal;
+	line-height: 25px;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	color: #464646;
+	text-decoration: none;
+}
+.white{
+	font-family: "新宋体";
+	font-size: 12px;
+	font-style: normal;
+	line-height: 25px;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	color: #fff;
+	text-decoration: none;
+}
+#h
+{ height:6px;
+}
+.memu {
+	font-family: "宋体";
+	font-size: 12px;
+	font-style: normal;
+	line-height: 18px;
+	font-weight: bold;
+	font-variant: normal;
+	text-transform: none;
+	color: #000000;
+	text-decoration: none;
+}
+.pict {
+	margin: 6px;
+	padding: 6px;
+}
+
+
+.tdbg
+{
+	font-family: "宋体";	
+	color: #000000;
+	padding: 4px 8px;
+}
+.topbg
+{
+	background: url(../images/topbar_bg.gif);
+	color: #ffffff;
+	padding: 4px 8px;
+	height: 28px;
+	font-weight: bold;
+	text-align: center;
+}
+.input {
+	border-color:#999999; 
+	border:1px solid; 
+	font-family: "宋体";
+	font-size: 12px;
+	font-style: normal;
+	line-height: 12px;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	color: #4f5050;
+} 
+td
+{
+font-family:宋体;font-size: 9pt;line-height: 150%;
+}
+
+input
+{
+    font-size: 12px;
+    height: 20px;
+}
+button
+{
+    font-size: 9pt;
+    height: 20px;
+}
+select
+{
+    font-size: 9pt;
+    height: 20px;
+}
+.title
+{
+    background:#449ae8;
+    color: #ffffff;
+    font-weight: normal;
+}
+.border
+{
+    border: 1px solid #449ae8;
+}
+/* 固定排课表格表格的css定义开始 */
+.date_border
+{
+    border: 1px solid ;
+}
+.date_title
+{
+    background:#449ae8;
+    color: #ffffff;
+    font-weight: normal;
+}
+.date_tdbg
+{
+    background:#449ae8;
+    color: #ffffff;
+    font-weight: normal;
+}
+.style2 {
+    font-size: 10px;
+}
+.style3 {
+    font-size: 12px;
+}
+/* 固定排课表格表格的css定义结束 */
+/* 在线比较文件的css定义开始 */
+.tdtop{
+    border-bottom: 1px solid #000000;
+    border-right: 1px solid #000000;
+    border-left: 1px solid #000000;
+}
+.tdinter{
+    border-right: 1px solid #c0c0c0;
+    border-left: 1px solid #c0c0c0;
+    text-align: center;
+}
+.tdbg1{
+    background:#f0f8f0;
+    line-height: 120%;
+}
+.title0
+{
+    background:#ebeadb;
+    color: #000000;
+    font-weight: normal;
+}
+/* 在线比较文件的css定义结束 */
+.tdbg{
+    background:#f0f0f0;
+    line-height: 120%;
+}
+.tdbgmouseover{
+    background:#bfdfff;
+    line-height: 120%;
+}
+.tdbgmouseout1{
+    background:#ffffff;
+    line-height: 120%;
+}
+.tdbgmouseout2{
+    background:#f3f3f3;
+    line-height: 120%;
+}
+.tdbg2{
+    background:#e0eef5;
+    line-height: 120%;
+}
+.tdbg5{
+    background:#e0eef5;
+    line-height: 120%;
+}
+.title3{
+    width:80px;
+    background:url('images/titlebg4.gif');
+    line-height: 120%;
+    padding-top:2px;
+    cursor:hand;
+}
+.title4
+{
+    width:80px;
+    background:url('images/titlebg3.gif');
+    color: #ffffff;
+    font-weight: normal;
+    padding-top:2px;
+    cursor:hand;
+}
+
+.title5{
+    width:80px;
+    background:url('images/titlebg2.gif');
+    line-height: 120%;
+    padding-top:2px;
+    cursor:hand;
+}
+
+.title6
+{
+    width:80px;
+    background:url('images/titlebg1.gif');
+    color: #ffffff;
+    font-weight: normal;
+    padding-top:2px;
+    cursor:hand;
+}
+
+.glow /*　标题文字发光效果定义，白字深蓝底 */
+{
+filter: glow(color=#0f42a6, strength=1);dropshadow(color=#0f42a6, offx=1, offy=1,); width: 100%; color: #ffffff; line-height: 20px
+}
+.topbg /*　标题背景单元格定义，白字深蓝底 */
+{
+    background:#0650d2;color:#ffffff;
+/*  font-weight:bold;text-align: centen; */
+}
+.topbg2 /*  浅色背景定义，用于首页细线 */
+{
+    background:#449ae8;
+}
+.bgcolor {
+    background-color: #e1f4ee;
+}
+.bginput {
+background:url("images/txtrule.jpg");
+background-repeat:repeat-x;
+font-family:ms shell dlg,tahoma,sans-serif,宋体;
+font-size:12px;
+border: 1px solid #a7a6aa;
+height: 20px;
+}
+.show_page {
+    text-align: center;
+}
+.romnumber {
+    font-size: 9pt;
+    overflow:hidden;
+    background-color:highlight;
+    border-right:0px;
+    text-align:right;
+    font-weight:bold;
+    color:highlighttext;
+    cursor:default;
+}
+.txt_main
+{
+    font-size: 9pt;
+    scrollbar-face-color: #f6f6f6;
+    scrollbar-highlight-color: #ffffff;
+    scrollbar-shadow-color: #cccccc;
+    scrollbar-3dlight-color: #cccccc;
+    scrollbar-arrow-color: #330000;
+    scrollbar-track-color: #f6f6f6;
+    scrollbar-darkshadow-color: #ffffff;
+}
+div#satitle {
+    background-color: #b1c1d1;
+    position : absolute;
+    z-index=2;
+    left = 285;
+    top = 205;
+    border-bottom: 1px solid #000000;
+    border-right: 1px solid #000000;
+    border-left: 1px solid #000000;
+}
+div#satitle2 {
+    background-color: #b1c1d1;
+    position : absolute;
+    border-bottom: 1px solid #000000;
+    border-right: 1px solid #000000;
+    border-left: 1px solid #000000;
+}
+div#satitle3 {
+    background-color: #b1c1d1;
+    position : absolute;
+    border-bottom: 1px solid #000000;
+    border-right: 1px solid #000000;
+    border-left: 1px solid #000000;
+}
+div#satitle4 {
+    background-color: #b1c1d1;
+    position : absolute;
+    border-bottom: 1px solid #000000;
+    border-right: 1px solid #000000;
+    border-left: 1px solid #000000;
+}
+div#skey {
+    background-color: #b1c1d1;
+    position : absolute;
+    border-bottom: 1px solid #000000;
+    border-right: 1px solid #000000;
+    border-left: 1px solid #000000;
+}
+div#sauthor {
+    background-color: #b1c1d1;
+    position : absolute;
+    border-bottom: 1px solid #000000;
+    border-right: 1px solid #000000;
+    border-left: 1px solid #000000;
+}
+div#scopyfrom {
+    background-color: #b1c1d1;
+    position : absolute;
+    border-bottom: 1px solid #000000;
+    border-right: 1px solid #000000;
+    border-left: 1px solid #000000;
+}
+

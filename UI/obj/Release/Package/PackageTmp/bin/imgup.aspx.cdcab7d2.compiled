@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/ImgUp.aspx" hash="52e4a8c81" filehash="3a03377872c5" flags="110000" assembly="SoMe" type="ASP.imgup_aspx">
+  <filedeps>
+    <filedep name="/ImgUp.aspx" />
+  </filedeps>
+</preserve>

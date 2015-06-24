@@ -1,0 +1,18 @@
+a, a:visited
+{
+	color: #000000;
+	text-decoration: none;
+}
+A:hover	{text-decoration: underline; color: #ff5555;}
+
+body{
+	margin:				0px;
+	border: 1px solid #999999;
+	background-color:#FBECCC; font-size:12px; font-family:Arial,ËÎÌו,Arial,Sans-serif; line-height:18px; margin-left:0px;
+	MARGIN-TOP: 0em; 
+	SCROLLBAR-FACE-COLOR: #FBECCC; 
+	SCROLLBAR-DARKSHADOW-COLOR: #FBECCC;
+	SCROLLBAR-BASE-COLOR: #FBECCC 
+
+}
+	

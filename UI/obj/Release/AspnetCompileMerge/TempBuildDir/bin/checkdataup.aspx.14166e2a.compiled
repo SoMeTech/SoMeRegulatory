@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/Shared/DiagList/CheckDataUp.aspx" hash="52e4a8c81" filehash="459591312655" flags="110000" assembly="SoMe" type="ASP.shared_diaglist_checkdataup_aspx">
+  <filedeps>
+    <filedep name="/Shared/DiagList/CheckDataUp.aspx" />
+  </filedeps>
+</preserve>

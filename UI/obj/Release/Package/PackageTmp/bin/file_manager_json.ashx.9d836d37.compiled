@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="2" virtualPath="/Work/FaGui/file_manager_json.ashx" hash="280d0c19" filehash="ffffdb1fb369499b" flags="110000" assembly="SoMe" type="FileManager">
+  <filedeps>
+    <filedep name="/Work/FaGui/file_manager_json.ashx" />
+  </filedeps>
+</preserve>

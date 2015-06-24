@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/System/Menu/MenuList.aspx" hash="52e4a8c81" filehash="cf8cacd2b197ced4" flags="110000" assembly="SoMe" type="ASP.system_menu_menulist_aspx">
+  <filedeps>
+    <filedep name="/Master/One.master" />
+    <filedep name="/System/Menu/MenuList.aspx" />
+    <filedep name="/WebControls/Buttons1.ascx" />
+    <filedep name="/WebControls/PageNavigator.ascx" />
+    <filedep name="/WebControls/WebOrderControl.ascx" />
+  </filedeps>
+</preserve>

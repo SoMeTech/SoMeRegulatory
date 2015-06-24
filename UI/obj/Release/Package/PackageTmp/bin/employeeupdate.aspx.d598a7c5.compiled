@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/System/Employee/EmployeeUpdate.aspx" hash="52e4a8c81" filehash="194c791e36c62678" flags="110000" assembly="SoMe" type="ASP.system_employee_employeeupdate_aspx">
+  <filedeps>
+    <filedep name="/Master/MainAddUpdate.master" />
+    <filedep name="/System/Employee/EmployeeUpdate.aspx" />
+    <filedep name="/WebControls/Buttons1.ascx" />
+  </filedeps>
+</preserve>

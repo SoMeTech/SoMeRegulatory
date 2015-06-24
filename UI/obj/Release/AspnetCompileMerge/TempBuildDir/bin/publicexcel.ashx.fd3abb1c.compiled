@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="2" virtualPath="/Work/DataPrint/Excel/PublicExcel.ashx" hash="280d0c19" filehash="ffffdaa1c92158e7" flags="110000" assembly="SoMe" type="PublicExcel">
+  <filedeps>
+    <filedep name="/Work/DataPrint/Excel/PublicExcel.ashx" />
+  </filedeps>
+</preserve>

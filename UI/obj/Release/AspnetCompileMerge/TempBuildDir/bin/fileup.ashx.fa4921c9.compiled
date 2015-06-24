@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="2" virtualPath="/WebControls/UserControl/Fileup.ashx" hash="280d0c19" filehash="ffffdc5cf142edf1" flags="110000" assembly="SoMe" type="Fileup">
+  <filedeps>
+    <filedep name="/WebControls/UserControl/Fileup.ashx" />
+  </filedeps>
+</preserve>

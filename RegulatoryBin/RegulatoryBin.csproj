@@ -1,0 +1,540 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C922F711-EDCB-4C0D-A25E-3B4D985A51C7}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>RegulatoryBin</RootNamespace>
+    <AssemblyName>RegulatoryBin</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Ajax">
+      <HintPath>..\dll\Ajax.dll</HintPath>
+    </Reference>
+    <Reference Include="AjaxControlToolkit">
+      <HintPath>..\dll\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="AjaxPro.2">
+      <HintPath>..\dll\AjaxPro.2.dll</HintPath>
+    </Reference>
+    <Reference Include="excel">
+      <HintPath>..\dll\excel.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="ExtExtenders">
+      <HintPath>..\dll\ExtExtenders.dll</HintPath>
+    </Reference>
+    <Reference Include="FredCK.FCKeditorV2">
+      <HintPath>..\dll\FredCK.FCKeditorV2.dll</HintPath>
+    </Reference>
+    <Reference Include="FreeTextBox">
+      <HintPath>..\dll\FreeTextBox.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.IWshRuntimeLibrary">
+      <HintPath>..\dll\Interop.IWshRuntimeLibrary.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Interop.jmail">
+      <HintPath>..\dll\Interop.jmail.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Interop.MSXML2">
+      <HintPath>..\dll\Interop.MSXML2.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Interop.SQLDMO">
+      <HintPath>..\dll\Interop.SQLDMO.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="LitJSON">
+      <HintPath>..\dll\LitJSON.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net">
+      <HintPath>..\dll\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Maticsoft.Common">
+      <HintPath>..\dll\Maticsoft.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+      <HintPath>..\dll\Microsoft.Office.Interop.Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Owc11">
+      <HintPath>..\dll\Microsoft.Office.Interop.Owc11.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="NVelocity">
+      <HintPath>..\dll\NVelocity.dll</HintPath>
+    </Reference>
+    <Reference Include="office, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\dll\office.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.OracleClient" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="YYControls">
+      <HintPath>..\dll\YYControls.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AndyGridViewTHeaderHepler.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="BHSoft\BHWeb\Common\ArticlePage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BHSoft\BHWeb\Common\Base\ControlBase.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BHSoft\BHWeb\Common\Base\PageBase.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BHSoft\BHWeb\Common\CharTran.cs" />
+    <Compile Include="BHSoft\BHWeb\Common\CheckChar.cs" />
+    <Compile Include="BHSoft\BHWeb\Common\Common.cs" />
+    <Compile Include="BHSoft\BHWeb\Common\CommonClasses\log.cs" />
+    <Compile Include="BHSoft\BHWeb\Common\CommonUtil.cs" />
+    <Compile Include="BHSoft\BHWeb\Common\Common_Login.cs" />
+    <Compile Include="BHSoft\BHWeb\Common\Configuration\ModuleConfig.cs" />
+    <Compile Include="BHSoft\BHWeb\Common\Const.cs" />
+    <Compile Include="BHSoft\BHWeb\Common\CryptoUtil.cs" />
+    <Compile Include="BHSoft\BHWeb\Common\CutPage.cs" />
+    <Compile Include="BHSoft\BHWeb\Common\Data\DBBase.cs" />
+    <Compile Include="BHSoft\BHWeb\Common\Data\DBTableData.cs" />
+    <Compile Include="BHSoft\BHWeb\Common\DNTRequest.cs" />
+    <Compile Include="BHSoft\BHWeb\Common\file.cs" />
+    <Compile Include="BHSoft\BHWeb\Common\img.cs" />
+    <Compile Include="BHSoft\BHWeb\Common\InEncrypt.cs" />
+    <Compile Include="BHSoft\BHWeb\Common\JhEncrypt.cs" />
+    <Compile Include="BHSoft\BHWeb\Common\Location.cs" />
+    <Compile Include="BHSoft\BHWeb\Common\Mail\email.cs" />
+    <Compile Include="BHSoft\BHWeb\Common\Mail\MailAttachments.cs" />
+    <Compile Include="BHSoft\BHWeb\Common\Mail\MailFormat.cs" />
+    <Compile Include="BHSoft\BHWeb\Common\Mail\MailMessage.cs" />
+    <Compile Include="BHSoft\BHWeb\Common\Mail\MailPriority.cs" />
+    <Compile Include="BHSoft\BHWeb\Common\Mail\SendMail.cs" />
+    <Compile Include="BHSoft\BHWeb\Common\Mail\SmtpMail.cs" />
+    <Compile Include="BHSoft\BHWeb\Common\Mail\SmtpServerHelper.cs" />
+    <Compile Include="BHSoft\BHWeb\Common\mySendMail.cs" />
+    <Compile Include="BHSoft\BHWeb\Common\PageBase.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BHSoft\BHWeb\Common\PicOperate.cs" />
+    <Compile Include="BHSoft\BHWeb\Common\Power.cs" />
+    <Compile Include="BHSoft\BHWeb\Common\ReadXML.cs" />
+    <Compile Include="BHSoft\BHWeb\Common\Utils.cs" />
+    <Compile Include="BHSoft\BHWeb\Public\Constant.cs" />
+    <Compile Include="BHSoft\BHWeb\Public\enumValidateType.cs" />
+    <Compile Include="BHSoft\BHWeb\Public\ErrLog.cs" />
+    <Compile Include="BranchBll.cs" />
+    <Compile Include="BtnOutPutDelegate.cs" />
+    <Compile Include="ButtonsHandler.cs" />
+    <Compile Include="Common.cs" />
+    <Compile Include="Companybll.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ConfigMenu.cs" />
+    <Compile Include="Const.cs" />
+    <Compile Include="CreateItemTemplates.cs" />
+    <Compile Include="DBConfigFactory.cs" />
+    <Compile Include="DB_SETTING.cs" />
+    <Compile Include="DropMainData.cs" />
+    <Compile Include="ExcelToDataset.cs" />
+    <Compile Include="ExceptionLog\ExceptionLog.cs" />
+    <Compile Include="FileUploadService.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="GetServerInfo.cs" />
+    <Compile Include="GridViewGroup.cs" />
+    <Compile Include="ifExist.cs" />
+    <Compile Include="SMZJ\BLL\BLL_news.cs" />
+    <Compile Include="SMZJ\BLL\GL_GNFL_bll.cs" />
+    <Compile Include="SMZJ\BLL\HideColumn_Bll.cs" />
+    <Compile Include="SMZJ\BLL\MYFILETEST.cs" />
+    <Compile Include="SMZJ\BLL\reportParam_Bll.cs" />
+    <Compile Include="SMZJ\BLL\whereList_Bll.cs" />
+    <Compile Include="SMZJ\DAL\DAL_news.cs" />
+    <Compile Include="SMZJ\DAL\HideColumn_Dal.cs" />
+    <Compile Include="SMZJ\DAL\MYFILETEST.cs" />
+    <Compile Include="SMZJ\DAL\reportParam_Dal.cs" />
+    <Compile Include="SMZJ\DAL\whereList_Dal.cs" />
+    <Compile Include="SMZJ\Model\HideColumn_Model.cs" />
+    <Compile Include="SMZJ\Model\MYFILETEST.cs" />
+    <Compile Include="SMZJ\Model\news.cs" />
+    <Compile Include="SMZJ\Model\reportParam_Model.cs" />
+    <Compile Include="SMZJ\Model\whereList_Model.cs" />
+    <Compile Include="SoMeTech\CommonDll\Configuration\ConfigurationDal.cs" />
+    <Compile Include="SoMeTech\CommonDll\Configuration\ConfigurationModel.cs" />
+    <Compile Include="SoMeTech\CommonDll\GetSetXiangCunZu.cs" />
+    <Compile Include="SoMeTech\CommonDll\SMLicense.cs" />
+    <Compile Include="SoMeTech\CommonDll\IdDevices.cs" />
+    <Compile Include="SoMeTech\CommonDll\IdRulesDal.cs" />
+    <Compile Include="SoMeTech\CommonDll\IdRulesModel.cs" />
+    <Compile Include="SoMeTech\CommonDll\IESETUP.cs" />
+    <Compile Include="SoMeTech\CommonDll\JSONHelper.cs" />
+    <Compile Include="SoMeTech\CommonDll\PublicDal.cs" />
+    <Compile Include="SoMeTech\CommonDll\RulesTypeModel.cs" />
+    <Compile Include="SoMeTech\CommonDll\SSXX_Branch.cs" />
+    <Compile Include="SoMeTech\Company\Bank\BankDal.cs" />
+    <Compile Include="SoMeTech\Company\Bank\BankModel.cs" />
+    <Compile Include="SoMeTech\Company\Branch\BranchDal.cs" />
+    <Compile Include="SoMeTech\Company\Branch\BranchModel.cs" />
+    <Compile Include="SoMeTech\Company\CompanyDal.cs" />
+    <Compile Include="SoMeTech\Company\CompanyModel.cs" />
+    <Compile Include="SoMeTech\Company\Employee\EmployeeDal.cs" />
+    <Compile Include="SoMeTech\Company\Employee\EmployeeModel.cs" />
+    <Compile Include="SoMeTech\Company\OrgStructBusiness.cs" />
+    <Compile Include="SoMeTech\Company\Role\RoleDal.cs" />
+    <Compile Include="SoMeTech\Company\Role\RoleModel.cs" />
+    <Compile Include="SoMeTech\DataAccess\DataBaseType.cs" />
+    <Compile Include="SoMeTech\DataAccess\DB_OPT.cs" />
+    <Compile Include="SoMeTech\DataAccess\DB_Oracle.cs" />
+    <Compile Include="SoMeTech\DataAccess\DB_Sql.cs" />
+    <Compile Include="SoMeTech\Data\CommandInfo.cs" />
+    <Compile Include="SoMeTech\Data\DbHelperOleDb.cs" />
+    <Compile Include="SoMeTech\Data\DbHelperOra.cs" />
+    <Compile Include="SoMeTech\Data\DbHelperSQL.cs" />
+    <Compile Include="SoMeTech\Data\EffentNextType.cs" />
+    <Compile Include="SoMeTech\Dictionary\DataDic\DataColumn\DataColumnDal.cs" />
+    <Compile Include="SoMeTech\Dictionary\DataDic\DataColumn\DataColumnModel.cs" />
+    <Compile Include="SoMeTech\Dictionary\DataDic\DataTable\DataTableDal.cs" />
+    <Compile Include="SoMeTech\Dictionary\DataDic\DataTable\DataTableModel.cs" />
+    <Compile Include="SoMeTech\Dictionary\Dictionary.cs" />
+    <Compile Include="SoMeTech\Dictionary\LDJGXZ\LDJGDal.cs" />
+    <Compile Include="SoMeTech\Dictionary\LDJGXZ\LDJGModel.cs" />
+    <Compile Include="SoMeTech\Dictionary\OprateTacheApprove\OprateTacheApproveDal.cs" />
+    <Compile Include="SoMeTech\Dictionary\OprateTacheApprove\OprateTacheApproveModel.cs" />
+    <Compile Include="SoMeTech\Dictionary\OprateToInformation\OprateToInformationDal.cs" />
+    <Compile Include="SoMeTech\Dictionary\OprateToInformation\OprateToInformationModel.cs" />
+    <Compile Include="SoMeTech\Dictionary\SFProCountStandard\SFProCountStandardDal.cs" />
+    <Compile Include="SoMeTech\Dictionary\SFProCountStandard\SFProCountStandardModel.cs" />
+    <Compile Include="SoMeTech\Dictionary\SFProExecuteRemark\SFZSZXFJDal.cs" />
+    <Compile Include="SoMeTech\Dictionary\SFProExecuteRemark\SFZSZXFJModel.cs" />
+    <Compile Include="SoMeTech\Dictionary\SFProExecuteStandard\SFProExecuteStandardDal.cs" />
+    <Compile Include="SoMeTech\Dictionary\SFProExecuteStandard\SFProExecuteStandardModel.cs" />
+    <Compile Include="SoMeTech\Dictionary\SFProject\SFCode.cs" />
+    <Compile Include="SoMeTech\Dictionary\SFProject\SFProjectDal.cs" />
+    <Compile Include="SoMeTech\Dictionary\SFProject\SFProjectModel.cs" />
+    <Compile Include="SoMeTech\Dictionary\SFType\SFTypeDal.cs" />
+    <Compile Include="SoMeTech\Dictionary\SFType\SFTypeModel.cs" />
+    <Compile Include="SoMeTech\Dictionary\UnitCount\UnitCountDal.cs" />
+    <Compile Include="SoMeTech\Dictionary\UnitCount\UnitCountModel.cs" />
+    <Compile Include="SoMeTech\Dictionary\ZSZXFJ\ZSZXFJDal.cs" />
+    <Compile Include="SoMeTech\Dictionary\ZSZXFJ\ZSZXFJModel.cs" />
+    <Compile Include="SoMeTech\DllAccess\Classes.cs" />
+    <Compile Include="SoMeTech\DllAccess\Property.cs" />
+    <Compile Include="SoMeTech\json\usJSON\JSONArray.cs" />
+    <Compile Include="SoMeTech\json\usJSON\JSONConvert.cs" />
+    <Compile Include="SoMeTech\json\usJSON\jsonData_Dal.cs" />
+    <Compile Include="SoMeTech\json\usJSON\JSONObject.cs" />
+    <Compile Include="SoMeTech\Menu\DataRowPowerDal.cs" />
+    <Compile Include="SoMeTech\Menu\DataRowPowerItemDal.cs" />
+    <Compile Include="SoMeTech\Menu\DataRowPowerItemModel.cs" />
+    <Compile Include="SoMeTech\Menu\DataRowPowerModel.cs" />
+    <Compile Include="SoMeTech\Menu\LoadData.cs" />
+    <Compile Include="SoMeTech\Menu\MenuDal.cs" />
+    <Compile Include="SoMeTech\Menu\MenuModel.cs" />
+    <Compile Include="SoMeTech\Menu\PowerNum.cs" />
+    <Compile Include="SoMeTech\OperationLog\OperationLogDal.cs" />
+    <Compile Include="SoMeTech\OperationLog\OperationLogModel.cs" />
+    <Compile Include="SoMeTech\ServicesClass\Operation\AllowTableMess.cs" />
+    <Compile Include="SoMeTech\ServicesClass\Operation\BusinessMessDal.cs" />
+    <Compile Include="SoMeTech\ServicesClass\Operation\BusinessMessModel.cs" />
+    <Compile Include="SoMeTech\ServicesClass\Operation\OperationDal.cs" />
+    <Compile Include="SoMeTech\ServicesClass\Operation\OperationModel.cs" />
+    <Compile Include="SoMeTech\ServicesClass\Services\ServicesAddessTypeEnum.cs" />
+    <Compile Include="SoMeTech\ServicesClass\Services\ServicesConnectionDal.cs" />
+    <Compile Include="SoMeTech\ServicesClass\Services\ServicesConnectionModel.cs" />
+    <Compile Include="SoMeTech\ServicesClass\Services\ServicesDal.cs" />
+    <Compile Include="SoMeTech\ServicesClass\Services\ServicesMessDal.cs" />
+    <Compile Include="SoMeTech\ServicesClass\Services\ServicesMessModel.cs" />
+    <Compile Include="SoMeTech\ServicesClass\Services\ServicesModel.cs" />
+    <Compile Include="SoMeTech\ServicesClass\Services\ServicesRegisterDal.cs" />
+    <Compile Include="SoMeTech\ServicesClass\Services\ServicesRegisterModel.cs" />
+    <Compile Include="SoMeTech\ServicesClass\Services\ServicesTypeDal.cs" />
+    <Compile Include="SoMeTech\ServicesClass\Services\ServicesTypeEnum.cs" />
+    <Compile Include="SoMeTech\ServicesClass\Services\ServicesTypeModel.cs" />
+    <Compile Include="SoMeTech\ServicesClass\Services\ServiceTypeIsServicePage.cs" />
+    <Compile Include="SoMeTech\ServicesClass\Services\SumRuleEnum.cs" />
+    <Compile Include="SoMeTech\Services\Usual\UsualServices.cs" />
+    <Compile Include="SoMeTech\User\PowerClass.cs" />
+    <Compile Include="SoMeTech\User\UserDal.cs" />
+    <Compile Include="SoMeTech\User\UserModel.cs" />
+    <Compile Include="SoMeTech\User\UserUpdateIndex.cs" />
+    <Compile Include="SoMeTech\User\UserUpdatePowerType.cs" />
+    <Compile Include="SoMeTech\UsualBookTable\MenuNode.cs" />
+    <Compile Include="SoMeTech\UsualBookTable\MenuPopedom.cs" />
+    <Compile Include="SoMeTech\UsualBookTable\MenuShow.cs" />
+    <Compile Include="SoMeTech\UsualBookTable\MenuType.cs" />
+    <Compile Include="SoMeTech\UsualBookTable\QxDictionary.cs" />
+    <Compile Include="SoMeTech\UsualBookTable\UsualBookTableDal.cs" />
+    <Compile Include="SoMeTech\UsualBookTable\UsualBookTableModel.cs" />
+    <Compile Include="SoMeTech\WebServerAccess\ServerCollections.cs" />
+    <Compile Include="SoMeTech\WebServerAccess\WebServerAccess.cs" />
+    <Compile Include="HttpFileUpload.cs" />
+    <Compile Include="JquerySever.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MainPageClass.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SMZJ\BLL\MESS_BACK_Bll.cs" />
+    <Compile Include="SMZJ\DAL\MESS_BACK_Dal.cs" />
+    <Compile Include="SMZJ\Model\MESS_BACK_Model.cs" />
+    <Compile Include="OpenServices.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OperationLogBll.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PageChangeHandl.cs" />
+    <Compile Include="PageChangeHandler.cs" />
+    <Compile Include="PageChangeHandlerReport.cs" />
+    <Compile Include="PageNavigatorHandler.cs" />
+    <Compile Include="PageSizeBll.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PublicModel.cs" />
+    <Compile Include="QxRoom\Common\CharCheck.cs" />
+    <Compile Include="QxRoom\Common\CodeBar39.cs" />
+    <Compile Include="QxRoom\Common\CommonException.cs" />
+    <Compile Include="QxRoom\Common\CommonUtil.cs" />
+    <Compile Include="QxRoom\Common\Configuration\ModuleConfig.cs" />
+    <Compile Include="QxRoom\Common\Const.cs" />
+    <Compile Include="QxRoom\Common\ControlDo\DataListDo.cs" />
+    <Compile Include="QxRoom\Common\ControlDo\DataSetDo.cs" />
+    <Compile Include="QxRoom\Common\ControlDo\DropDownListCopyType.cs" />
+    <Compile Include="QxRoom\Common\ControlDo\DropDownListDo.cs" />
+    <Compile Include="QxRoom\Common\ControlDo\PageDo.cs" />
+    <Compile Include="QxRoom\Common\DNTRequest.cs" />
+    <Compile Include="QxRoom\Common\DoNumber.cs" />
+    <Compile Include="QxRoom\Common\enumValidateType.cs" />
+    <Compile Include="QxRoom\Common\Evaluator.cs" />
+    <Compile Include="QxRoom\Common\Files.cs" />
+    <Compile Include="QxRoom\Common\Image.cs" />
+    <Compile Include="QxRoom\Common\Log.cs" />
+    <Compile Include="QxRoom\Common\Mail\Email.cs" />
+    <Compile Include="QxRoom\Common\Mail\MailAttachments.cs" />
+    <Compile Include="QxRoom\Common\Mail\MailFormat.cs" />
+    <Compile Include="QxRoom\Common\Mail\MailMessage.cs" />
+    <Compile Include="QxRoom\Common\Mail\MailPriority.cs" />
+    <Compile Include="QxRoom\Common\Mail\SendEmail.cs" />
+    <Compile Include="QxRoom\Common\Mail\SmtpMail.cs" />
+    <Compile Include="QxRoom\Common\Mail\SmtpServerHelper.cs" />
+    <Compile Include="QxRoom\Common\NumberToChina.cs" />
+    <Compile Include="QxRoom\Common\Public.cs" />
+    <Compile Include="QxRoom\Common\ReadXML.cs" />
+    <Compile Include="QxRoom\Common\Shortcut.cs" />
+    <Compile Include="QxRoom\Common\Utils.cs" />
+    <Compile Include="QxRoom\Common\WebControlStyle.cs" />
+    <Compile Include="QxRoom\Common\WindowStyle.cs" />
+    <Compile Include="QxRoom\DataAccess\ConnectionOleDB.cs" />
+    <Compile Include="QxRoom\DataAccess\ConnectionOracle.cs" />
+    <Compile Include="QxRoom\DataAccess\ConnectionSqlServer.cs" />
+    <Compile Include="QxRoom\DataAccess\DataBase.cs" />
+    <Compile Include="QxRoom\DataAccess\DataBaseEnter.cs" />
+    <Compile Include="QxRoom\DataAccess\DataBaseType.cs" />
+    <Compile Include="QxRoom\DataAccess\DataConfig.cs" />
+    <Compile Include="QxRoom\DataAccess\DbFunction.cs" />
+    <Compile Include="QxRoom\DataAccess\DBType.cs" />
+    <Compile Include="QxRoom\DataAccess\GetDataBaseType.cs" />
+    <Compile Include="QxRoom\DataAccess\GetDataBaseValue.cs" />
+    <Compile Include="QxRoom\DataAccess\MyDataType.cs" />
+    <Compile Include="QxRoom\DataAccess\OleDbDataBase.cs" />
+    <Compile Include="QxRoom\DataAccess\OracleDataBase.cs" />
+    <Compile Include="QxRoom\DataAccess\Parameter.cs" />
+    <Compile Include="QxRoom\DataAccess\ParameterCollection.cs" />
+    <Compile Include="QxRoom\DataAccess\SqlServerDataBase.cs" />
+    <Compile Include="QxRoom\QxConst\QxConst.cs" />
+    <Compile Include="QxRoom\QxExcel\AQxExcel.cs" />
+    <Compile Include="QxRoom\QxExcel\DataSetToExcel.cs" />
+    <Compile Include="QxRoom\QxExcel\ExcelException.cs" />
+    <Compile Include="QxRoom\QxExcel\ExcelMacroHelper.cs" />
+    <Compile Include="QxRoom\QxExcel\ExportFiles.cs" />
+    <Compile Include="QxRoom\QxExcel\GridViewToExcel.cs" />
+    <Compile Include="QxRoom\QxExcel\QxBordersIndex.cs" />
+    <Compile Include="QxRoom\QxExcel\QxBordersType.cs" />
+    <Compile Include="QxRoom\QxExcel\QxExcelEnum.cs" />
+    <Compile Include="QxRoom\QxExcel\QxHorizontalAlignment.cs" />
+    <Compile Include="QxRoom\QxExcel\QxReadExcel.cs" />
+    <Compile Include="QxRoom\QxExcel\QxSheetType.cs" />
+    <Compile Include="QxRoom\QxExcel\QxVerticalAlignment.cs" />
+    <Compile Include="QxRoom\QxExcel\QxWriteExcel.cs" />
+    <Compile Include="QxRoom\QxExcel\RangeStyle.cs" />
+    <Compile Include="QxRoom\QxFunctionLog\AccessType.cs" />
+    <Compile Include="QxRoom\QxFunctionLog\ClassErrLogException.cs" />
+    <Compile Include="QxRoom\QxFunctionLog\GetAccessType.cs" />
+    <Compile Include="QxRoom\QxFunctionLog\LogException.cs" />
+    <Compile Include="QxRoom\QxFunctionLog\QxClassErrLog.cs" />
+    <Compile Include="QxRoom\QxFunctionLog\QxLog.cs" />
+    <Compile Include="QxRoom\QxFunctionLog\QxLogBase.cs" />
+    <Compile Include="QxRoom\QxXml\QxXmlDocument.cs" />
+    <Compile Include="QxRoom\QxXml\QxXmlWrite.cs" />
+    <Compile Include="SearchControlButtonClickType.cs" />
+    <Compile Include="SearchHandler.cs" />
+    <Compile Include="CheckSN.cs" />
+    <Compile Include="SoMeTech\YZXWPageClass\ButtonsModel.cs" />
+    <Compile Include="SoMeTech\YZXWPageClass\Dictionary\DictionaryUsuClass.cs" />
+    <Compile Include="SoMeTech\YZXWPageClass\Dictionary\SFZSDic\SFZSViewData.cs" />
+    <Compile Include="SoMeTech\YZXWPageClass\PageKind.cs" />
+    <Compile Include="SoMeTech\YZXWPageClass\PageShowText.cs" />
+    <Compile Include="SoMeTech\YZXWPageClass\PageType.cs" />
+    <Compile Include="SoMeTech\YZXWPageClass\PageUsuClass.cs" />
+    <Compile Include="SoMeTech\YZXWPageClass\WriteTimePass.cs" />
+    <Compile Include="StateInfo.cs" />
+    <Compile Include="SymmetricMethod.cs" />
+    <Compile Include="Synv\Common\ImageWaterMark.cs" />
+    <Compile Include="Synv\Common\SerializationHelper.cs" />
+    <Compile Include="TwoPageButtonsHandler.cs" />
+    <Compile Include="TwoPageButtonsModel.cs" />
+    <Compile Include="UserBll.cs" />
+    <Compile Include="UsualBookTable.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Utils.cs" />
+    <Compile Include="ValidateEditItem.cs" />
+    <Compile Include="WebSetInfo.cs" />
+    <Compile Include="WebSetManager.cs" />
+    <Compile Include="SMZJ\BLL\GOV_TC_DB_COMPANYDATADZ_Bll.cs" />
+    <Compile Include="SMZJ\BLL\PD_BASE_KAOPINGTYPEDETAIL_Bll.cs" />
+    <Compile Include="SMZJ\BLL\PD_BASE_KAOPINGTYPE_Bll.cs" />
+    <Compile Include="SMZJ\BLL\PD_CONTRACT_CHANGE_Bll.cs" />
+    <Compile Include="SMZJ\BLL\PD_FOUND_OUT_Bll.cs" />
+    <Compile Include="SMZJ\BLL\PD_PROJECT_APPRAISE_Bll.cs" />
+    <Compile Include="SMZJ\BLL\PD_PROJECT_ATTACH_BZ_Bll.cs" />
+    <Compile Include="SMZJ\BLL\PD_PROJECT_ATTACH_PF_Bll.cs" />
+    <Compile Include="SMZJ\BLL\PD_PROJECT_ATTACH_SB_Bll.cs" />
+    <Compile Include="SMZJ\BLL\PD_PROJECT_ATTACH_SS_Bll.cs" />
+    <Compile Include="SMZJ\BLL\PD_PROJECT_ATTACH_YS_Bll.cs" />
+    <Compile Include="SMZJ\BLL\PD_PROJECT_BZFFLIST_Bll.cs" />
+    <Compile Include="SMZJ\BLL\PD_PROJECT_CONTRACT_BAK_Bll.cs" />
+    <Compile Include="SMZJ\BLL\PD_PROJECT_CONTRACT_Bll.cs" />
+    <Compile Include="SMZJ\BLL\PD_PROJECT_GKGS_Bll.cs" />
+    <Compile Include="SMZJ\BLL\PD_PROJECT_INSPECTION_Bll.cs" />
+    <Compile Include="SMZJ\BLL\PD_PROJECT_JGYS_Bll.cs" />
+    <Compile Include="SMZJ\BLL\PD_PROJECT_KAOPING_Bll.cs" />
+    <Compile Include="SMZJ\BLL\PD_PROJECT_LOG_Bll.cs" />
+    <Compile Include="SMZJ\BLL\PD_PROJECT_MONITOR_Bll.cs" />
+    <Compile Include="SMZJ\BLL\PD_PROJECT_PUBLICEXCEL_Bll.cs" />
+    <Compile Include="SMZJ\BLL\PD_PROJECT_PUBLICEXCEL_DETAIL_Bll.cs" />
+    <Compile Include="SMZJ\BLL\PD_PROJECT_REGULATE_DETAIL_Bll.cs" />
+    <Compile Include="SMZJ\BLL\PD_PROJECT_TZJGC_Bll.cs" />
+    <Compile Include="SMZJ\BLL\PD_PROJECT_ZTB_Bll.cs" />
+    <Compile Include="SMZJ\BLL\ReportPublicBll.cs" />
+    <Compile Include="SMZJ\BLL\TB_PROJECT_Bll.cs" />
+    <Compile Include="SMZJ\BLL\TB_PROJECT_BZ_Bll.cs" />
+    <Compile Include="SMZJ\BLL\TB_QUOTA_Bll.cs" />
+    <Compile Include="SMZJ\BLL\TB_QUOTA_DETAIL.cs" />
+    <Compile Include="SMZJ\BLL\TB_QUOTA_DETAIL_TMP.cs" />
+    <Compile Include="SMZJ\DAL\GL_GNFL_dal.cs" />
+    <Compile Include="SMZJ\DAL\GOV_TC_DB_COMPANYDATADZ_Dal.cs" />
+    <Compile Include="SMZJ\DAL\PD_BASE_KAOPINGTYPEDETAIL_DAL.cs" />
+    <Compile Include="SMZJ\DAL\PD_BASE_KAOPINGTYPE_DAL.cs" />
+    <Compile Include="SMZJ\DAL\PD_CONTRACT_CHANGE_Dal.cs" />
+    <Compile Include="SMZJ\DAL\PD_FOUND_OUT_DAL.cs" />
+    <Compile Include="SMZJ\DAL\PD_PROJECT_APPRAISE_DAL.cs" />
+    <Compile Include="SMZJ\DAL\PD_PROJECT_ATTACH_BZ_Dal.cs" />
+    <Compile Include="SMZJ\DAL\PD_PROJECT_ATTACH_PF_Dal.cs" />
+    <Compile Include="SMZJ\DAL\PD_PROJECT_ATTACH_SB_Dal.cs" />
+    <Compile Include="SMZJ\DAL\PD_PROJECT_ATTACH_SS_Dal.cs" />
+    <Compile Include="SMZJ\DAL\PD_PROJECT_ATTACH_YS_DAL.cs" />
+    <Compile Include="SMZJ\DAL\PD_PROJECT_BZFFLIST_Dal.cs" />
+    <Compile Include="SMZJ\DAL\PD_PROJECT_CONTRACT_BAK_Dal.cs" />
+    <Compile Include="SMZJ\DAL\PD_PROJECT_CONTRACT_Dal.cs" />
+    <Compile Include="SMZJ\DAL\PD_PROJECT_GKGS_DAL.cs" />
+    <Compile Include="SMZJ\DAL\PD_PROJECT_INSPECTION_Dal.cs" />
+    <Compile Include="SMZJ\DAL\PD_PROJECT_JGYS_DAL.cs" />
+    <Compile Include="SMZJ\DAL\PD_PROJECT_KAOPING_DAL.cs" />
+    <Compile Include="SMZJ\DAL\PD_PROJECT_LOG_Dal.cs" />
+    <Compile Include="SMZJ\DAL\PD_PROJECT_MONITOR_Dal.cs" />
+    <Compile Include="SMZJ\DAL\PD_PROJECT_PUBLICEXCEL_Dal.cs" />
+    <Compile Include="SMZJ\DAL\PD_PROJECT_PUBLICEXCEL_DETAIL_Dal.cs" />
+    <Compile Include="SMZJ\DAL\PD_PROJECT_REGULATE_DETAIL_Dal.cs" />
+    <Compile Include="SMZJ\DAL\PD_PROJECT_TZJGC_Dal.cs" />
+    <Compile Include="SMZJ\DAL\PD_PROJECT_ZTB_Dal.cs" />
+    <Compile Include="SMZJ\DAL\ReportPublicDal.cs" />
+    <Compile Include="SMZJ\DAL\TB_PROJECT_BZ_Dal.cs" />
+    <Compile Include="SMZJ\DAL\TB_PROJECT_Dal.cs" />
+    <Compile Include="SMZJ\DAL\TB_QUOTA_DAL.cs" />
+    <Compile Include="SMZJ\DAL\TB_QUOTA_DETAIL.cs" />
+    <Compile Include="SMZJ\DAL\TB_QUOTA_DETAIL_TMP.cs" />
+    <Compile Include="SMZJ\Model\GOV_TC_DB_COMPANYDATADZ_Model.cs" />
+    <Compile Include="SMZJ\Model\PD_BASE_KAOPINGTYPEDETAIL_Model.cs" />
+    <Compile Include="SMZJ\Model\PD_BASE_KAOPINGTYPE_Model.cs" />
+    <Compile Include="SMZJ\Model\PD_CONTRACT_CHANGE_Model.cs" />
+    <Compile Include="SMZJ\Model\PD_FOUND_OUT_Model.cs" />
+    <Compile Include="SMZJ\Model\PD_PROJECT_APPRAISE_Model.cs" />
+    <Compile Include="SMZJ\Model\PD_PROJECT_ATTACH_BZ_Model.cs" />
+    <Compile Include="SMZJ\Model\PD_PROJECT_ATTACH_PF_Model.cs" />
+    <Compile Include="SMZJ\Model\PD_PROJECT_ATTACH_SB_Model.cs" />
+    <Compile Include="SMZJ\Model\PD_PROJECT_ATTACH_SS_Model.cs" />
+    <Compile Include="SMZJ\Model\PD_PROJECT_ATTACH_YS_Model.cs" />
+    <Compile Include="SMZJ\Model\PD_PROJECT_BZFFLIST_Model.cs" />
+    <Compile Include="SMZJ\Model\PD_PROJECT_CONTRACT_BAK_Model.cs" />
+    <Compile Include="SMZJ\Model\PD_PROJECT_CONTRACT_Model.cs" />
+    <Compile Include="SMZJ\Model\PD_PROJECT_GKGS_Model.cs" />
+    <Compile Include="SMZJ\Model\PD_PROJECT_INSPECTION_Model.cs" />
+    <Compile Include="SMZJ\Model\PD_PROJECT_JGYS_Model.cs" />
+    <Compile Include="SMZJ\Model\PD_PROJECT_KAOPING_Model.cs" />
+    <Compile Include="SMZJ\Model\PD_PROJECT_LOG_Model.cs" />
+    <Compile Include="SMZJ\Model\PD_PROJECT_MONITOR_Model.cs" />
+    <Compile Include="SMZJ\Model\PD_PROJECT_PUBLICEXCEL_DETAIL_Model.cs" />
+    <Compile Include="SMZJ\Model\PD_PROJECT_PUBLICEXCEL_Model.cs" />
+    <Compile Include="SMZJ\Model\PD_PROJECT_REGULATE_DETAIL_Model.cs" />
+    <Compile Include="SMZJ\Model\PD_PROJECT_TZJGC_Model.cs" />
+    <Compile Include="SMZJ\Model\PD_PROJECT_ZTB_Model.cs" />
+    <Compile Include="SMZJ\Model\TB_PROJECT_BZ_Model.cs" />
+    <Compile Include="SMZJ\Model\TB_PROJECT_Model.cs" />
+    <Compile Include="SMZJ\Model\TB_QUOTA_DETAIL.cs" />
+    <Compile Include="SMZJ\Model\TB_QUOTA_DETAIL_TMP.cs" />
+    <Compile Include="SMZJ\Model\TB_QUOTA_Model.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

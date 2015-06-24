@@ -1,0 +1,22 @@
+﻿ .tKeepAll
+        {
+            width: 100%;
+        }
+        .tKeepAll td
+        {
+            word-break: keep-all;
+            white-space: nowrap;
+            border: 1px solid #666; 
+        }
+       th{
+            background-color: #dedede;
+            color:#333333;
+	        line-height:20px;
+	        padding:2px;
+	        font-weight:bold;
+            text-align: center;
+            border: 1px solid #666;  
+       }
+   
+        #ui-datepicker-div {z-index:10000 !important;}
+    </style>

@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/Master/MainAddUpdate.master" hash="52e4a8c81" filehash="c18c54e0e2d7bfb3" flags="110000" assembly="SoMe" type="ASP.master_mainaddupdate_master">
+  <filedeps>
+    <filedep name="/Master/MainAddUpdate.master" />
+    <filedep name="/WebControls/Buttons1.ascx" />
+  </filedeps>
+</preserve>

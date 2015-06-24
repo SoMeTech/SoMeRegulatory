@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/App_Themes/App_Data/" hash="52e4a8c81" filehash="fe284c3f0705add2" flags="110000" assembly="SoMe" type="ASP.App_Data">
+  <filedeps>
+    <filedep name="/App_Themes/App_Data/" />
+  </filedeps>
+</preserve>

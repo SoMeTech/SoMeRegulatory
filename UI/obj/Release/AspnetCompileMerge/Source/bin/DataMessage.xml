@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<DataMessage>
+  
+  <!--合同信息表-->
+  <DataTableItem TableName="ContractsMessage" Text="合同信息表">
+    <DataColumnItem ColumnName="SumMoney" ColumnType="int">合同金额</DataColumnItem>
+    <DataColumnItem ColumnName="GivenDate" ColumnType="DateTime">合同签订日期</DataColumnItem>
+    <DataColumnItem ColumnName="EnterManPK" ColumnType="bady">录入人</DataColumnItem>
+    <DataColumnItem ColumnName="EnterDate" ColumnType="DateTime">录入日期</DataColumnItem>
+  </DataTableItem>
+
+  <!--项目档案表-->
+  <DataTableItem TableName="Subject" Text="项目档案表">
+    <DataColumnItem ColumnName="SumMoney" ColumnType="int">项目金额</DataColumnItem>
+    <DataColumnItem ColumnName="EnterManPK" ColumnType="bady">录入人</DataColumnItem>
+    <DataColumnItem ColumnName="EnterDate" ColumnType="DateTime">录入日期</DataColumnItem>
+    <DataColumnItem ColumnName="AuditManPK" ColumnType="bady">审核人</DataColumnItem>
+    <DataColumnItem ColumnName="AuditDate" ColumnType="DateTime">审核日期</DataColumnItem>
+  </DataTableItem>
+
+  <!--工程量清单-->
+  <DataTableItem TableName="ContratQuantities" Text="工程量清单">
+    <DataColumnItem ColumnName="SumMoney" ColumnType="int">总金额</DataColumnItem>
+    <DataColumnItem ColumnName="EnterManPK" ColumnType="bady">录入人</DataColumnItem>
+    <DataColumnItem ColumnName="EnterDate" ColumnType="DateTime">录入日期</DataColumnItem>
+    <DataColumnItem ColumnName="AuditManPK" ColumnType="bady">审核人</DataColumnItem>
+    <DataColumnItem ColumnName="AuditDate" ColumnType="DateTime">审核日期</DataColumnItem>
+  </DataTableItem>
+  
+  <!--佣金信息表-->
+  <DataTableItem TableName="Commision" Text="佣金信息表">
+    <DataColumnItem ColumnName="SumMoney" ColumnType="int">佣金金额</DataColumnItem>
+    <DataColumnItem ColumnName="PromisesMan" ColumnType="bady">承诺人</DataColumnItem>
+    <DataColumnItem ColumnName="EnterManPK" ColumnType="bady">录入人</DataColumnItem>
+    <DataColumnItem ColumnName="EnterDate" ColumnType="DateTime">录入日期</DataColumnItem>
+    <DataColumnItem ColumnName="AuditManPK" ColumnType="bady">审核人</DataColumnItem>
+    <DataColumnItem ColumnName="AuditDate" ColumnType="DateTime">审核日期</DataColumnItem>
+  </DataTableItem>
+
+  <!--佣金支付表-->
+  <DataTableItem TableName="CommisionPay" Text="佣金支付表">
+    <DataColumnItem ColumnName="SumMoney" ColumnType="int">涉及金额</DataColumnItem>
+    <DataColumnItem ColumnName="PayDate" ColumnType="DateTime">支付日期</DataColumnItem>
+    <DataColumnItem ColumnName="EnterManPK" ColumnType="bady">录入人</DataColumnItem>
+    <DataColumnItem ColumnName="EnterDate" ColumnType="DateTime">录入日期</DataColumnItem>
+    <DataColumnItem ColumnName="AuditManPK" ColumnType="bady">审核人</DataColumnItem>
+    <DataColumnItem ColumnName="AuditDate" ColumnType="DateTime">审核日期</DataColumnItem>
+  </DataTableItem>
+  
+  <!--提成支付表-->
+  <DataTableItem TableName="PickUpPay" Text="提成支付表">
+    <DataColumnItem ColumnName="Money" ColumnType="int">付款金额</DataColumnItem>
+    <DataColumnItem ColumnName="PayDate" ColumnType="DateTime">支付日期</DataColumnItem>
+    <DataColumnItem ColumnName="EnterManPK" ColumnType="bady">录入人</DataColumnItem>
+    <DataColumnItem ColumnName="EnterDate" ColumnType="DateTime">录入日期</DataColumnItem>
+    <DataColumnItem ColumnName="AuditManPK" ColumnType="bady">审核人</DataColumnItem>
+    <DataColumnItem ColumnName="AuditDate" ColumnType="DateTime">审核日期</DataColumnItem>
+  </DataTableItem>
+
+  <!--合同回款表-->
+  <DataTableItem TableName="ContratGather" Text="合同回款表">
+    <DataColumnItem ColumnName="CGMoney" ColumnType="int">回款金额</DataColumnItem>
+    <DataColumnItem ColumnName="GetDate" ColumnType="DateTime">到账日期</DataColumnItem>
+    <DataColumnItem ColumnName="EnterManPK" ColumnType="bady">录入人</DataColumnItem>
+    <DataColumnItem ColumnName="EnterDate" ColumnType="DateTime">录入日期</DataColumnItem>
+    <DataColumnItem ColumnName="AuditManPK" ColumnType="bady">审核人</DataColumnItem>
+    <DataColumnItem ColumnName="AuditDate" ColumnType="DateTime">审核日期</DataColumnItem>
+  </DataTableItem>
+  
+</DataMessage>

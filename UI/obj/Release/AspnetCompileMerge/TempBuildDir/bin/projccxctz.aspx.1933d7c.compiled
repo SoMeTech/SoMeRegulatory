@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/Report/projCCXCTZ.aspx" hash="52e4a8c81" filehash="3fdb375c3d0cc461" flags="110000" assembly="SoMe" type="ASP.report_projccxctz_aspx">
+  <filedeps>
+    <filedep name="/Master/Report.master" />
+    <filedep name="/Report/projCCXCTZ.aspx" />
+    <filedep name="/WebControls/ReportOrderControl.ascx" />
+    <filedep name="/WebControls/reprotButtonl.ascx" />
+  </filedeps>
+</preserve>

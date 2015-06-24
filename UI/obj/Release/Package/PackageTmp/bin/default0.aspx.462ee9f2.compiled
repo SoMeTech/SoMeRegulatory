@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/System/Menu/Default0.aspx" hash="52e4a8c81" filehash="ffffce1ed7a161a5" flags="110000" assembly="SoMe" type="ASP.system_menu_default0_aspx">
+  <filedeps>
+    <filedep name="/System/Menu/Default0.aspx" />
+  </filedeps>
+</preserve>
